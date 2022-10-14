@@ -253,6 +253,93 @@ template {
   overflow: hidden;
 }
 
+.logoTypography {
+  color: rgb(30, 23, 19);
+  text-decoration: none;
+}
+.logoTypography h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  line-height: 24px;
+  letter-spacing: 1.7px;
+  font-weight: 400;
+}
+
+.logoTypography:visited {
+  font-weight: 400;
+  color: rgb(30, 23, 19);
+  text-decoration: none;
+}
+
+.sloganTypography {
+  font-family: "Pacifico", cursive;
+  font-size: 5.8rem;
+  line-height: 68px;
+  font-weight: 400;
+  color: rgb(26, 49, 92);
+}
+
+.navTypography {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 2.9px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: rgb(26, 49, 92);
+  text-decoration: none;
+}
+
+.navTypography:visited {
+  color: rgb(26, 49, 92);
+  text-decoration: none;
+}
+
+.sectionHeadingTypography {
+  font-family: "Pacifico", cursive;
+  font-size: 4.3rem;
+  line-height: 58px;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+}
+
+.bodyTypography {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.buttonTypography {
+  font-family: "Pacifico", cursive;
+  font-size: 2.7rem;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  text-decoration: none;
+  padding: 0 30px;
+}
+
+.buttonTypography:visited {
+  text-decoration: none;
+}
+
+.tBlack {
+  color: rgb(22, 21, 21);
+}
+
+.tBlue {
+  color: rgb(26, 49, 92);
+}
+
+.tWhite {
+  color: rgb(255, 255, 255);
+}
+
+html {
+  font-size: 62.5%;
+}
+
 img {
   max-width: 100%;
 }
@@ -262,4 +349,28 @@ li {
   list-style: none;
   margin: 0 auto;
   padding: 0;
+}
+
+.imgShadowRight {
+  -webkit-box-shadow: 15px 15px rgb(12, 173, 192);
+          box-shadow: 15px 15px rgb(12, 173, 192);
+}
+
+.imgShadowLeft {
+  -webkit-box-shadow: 15px 15px rgb(12, 173, 192);
+          box-shadow: 15px 15px rgb(12, 173, 192);
+}
+
+.bDark {
+  color: rgb(255, 255, 255);
+  background: rgb(26, 49, 92);
+}
+
+.bDark:visited {
+  color: rgb(255, 255, 255);
+}
+
+.bLight {
+  color: rgb(22, 21, 21);
+  background: rgb(204, 237, 251);
 }

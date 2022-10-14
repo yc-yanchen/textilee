@@ -1,0 +1,41 @@
+@use "./variables" as userV;
+
+//GENERAL STYLING
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+//IMAGE DROP SHADOW
+.imgShadowRight {
+    box-shadow: 15px 15px userV.$turquoiseBlue;
+}
+
+.imgShadowLeft {
+    box-shadow: 15px 15px userV.$turquoiseBlue;
+}
+
+//BUTTON STYLES
+.bDark {
+    color: userV.$white;
+    background: userV.$darkSlateBlue;
+}
+
+.bDark:visited {
+    color: userV.$white;
+}
+
+.bLight {
+    color: userV.$textBlack;
+    background: userV.$lightSkyBlue;
+}
