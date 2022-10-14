@@ -3,6 +3,7 @@
 //GENERAL STYLING
 html {
     font-size: 62.5%;
+    min-width: 1400px;
 }
 
 img {
@@ -16,13 +17,19 @@ li {
     padding: 0;
 }
 
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 //IMAGE DROP SHADOW
-.imgShadowRight {
+.imgShadowR {
     box-shadow: 15px 15px userV.$turquoiseBlue;
 }
 
-.imgShadowLeft {
-    box-shadow: 15px 15px userV.$turquoiseBlue;
+.imgShadowL {
+    box-shadow: -15px 15px userV.$turquoiseBlue;
 }
 
 //BUTTON STYLES

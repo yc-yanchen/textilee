@@ -3,7 +3,7 @@
 // LOGO TYPOGRAPHY
 // WHEN USING REM FOR FONT SIZE, DOES LINE HEIGHT AND LETTER SPACING HAVE TO USE REM TOO?
 
-.logoTypography {
+.tLogo {
     color: userV.$logoBlack;
     text-decoration: none;
     h1 {
@@ -15,14 +15,14 @@
     }
 }
 
-.logoTypography:visited {
+.tLogo:visited {
     font-weight: 400;
     color: userV.$logoBlack;
     text-decoration: none;
 }
 
 // SLOGAN TYPOGRAPHY
-.sloganTypography {
+.tSlogan {
     font-family: "Pacifico", cursive;
     font-size: 5.8rem;
     line-height: 68px;
@@ -31,7 +31,7 @@
 }
 
 // NAVIGATION TYPOGRAPHY
-.navTypography {
+.tNav {
     font-family: "Lato", sans-serif;
     font-size: 2rem;
     line-height: 2.9px;
@@ -41,13 +41,13 @@
     text-decoration: none;
 }
 
-.navTypography:visited {
+.tNav:visited {
     color: userV.$darkSlateBlue;
     text-decoration: none;
 }
 
 // SECTION HEADING TYPOGRAPHY
-.sectionHeadingTypography {
+.tHeading {
     font-family: "Pacifico", cursive;
     font-size: 4.3rem;
     line-height: 58px;
@@ -55,8 +55,17 @@
     letter-spacing: 2.7px;
 }
 
+// SMALLER SECTION TYPOGRAPHY
+.tSmallerHeading {
+    font-family: "Pacifico", cursive;
+    font-size: 4rem;
+    line-height: 58px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+}
+
 // BODY TYPOGRAPHY
-.bodyTypography {
+.tBody {
     font-family: "Lato", sans-serif;
     font-size: 2rem;
     line-height: 28px;
@@ -65,7 +74,7 @@
 }
 
 // BUTTON TYPOGRAPHY
-.buttonTypography {
+.tButton {
     font-family: "Pacifico", cursive;
     font-size: 2.7rem;
     line-height: 32px;
@@ -75,11 +84,17 @@
     padding: 0 30px;
 }
 
-.buttonTypography:visited {
+.tButton:visited {
     text-decoration: none;
 }
 
-// COLOUR SELECTION
+// COPYRIGHT TYPOGRAPHY
+.tCopyright {
+    font-size: 2.5rem;
+    color: userV.$white;
+}
+
+// TYPOGRAPHY COLOURS
 .tBlack {
     color: userV.$textBlack;
 }
