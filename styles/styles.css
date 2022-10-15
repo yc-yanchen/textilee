@@ -505,7 +505,69 @@ header .imgContainer {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  gap: 2%;
 }
 .moreInformation .itemContainerFlex .itemContainer {
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3%;
+  width: 49%;
+}
+
+.placeHolder {
+  width: 55px;
+  height: 55px;
+  background-color: rgb(12, 173, 192);
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.discovery {
+  background-color: rgb(33, 64, 79);
+  position: relative;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.discovery .itemContainerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 15%;
+}
+.discovery .itemContainer {
+  width: 42.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.discovery .imgContainer {
+  position: absolute;
+}
+.discovery .imgContainerL {
+  left: 0%;
+  top: -5%;
+}
+.discovery .imgContainerR {
+  right: 0%;
+  bottom: -5%;
+}
+.discovery .tContainer {
+  padding: 12.5% 2%;
+}
+.discovery .itemContainer:nth-child(2) .tContainer {
+  text-align: left;
+}
+.discovery .itemContainer:nth-child(3) .tContainer {
+  text-align: right;
+}
+
+.banner {
+  background: url(../textilee-assets/banner.jpg);
+  height: 500px;
 }

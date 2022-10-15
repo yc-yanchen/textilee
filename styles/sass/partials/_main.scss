@@ -38,9 +38,69 @@
     .itemContainerFlex {
         display: flex;
         flex-flow: row wrap;
+        gap: 2%;
 
         .itemContainer {
-            width: 50%;
+            display: flex;
+            gap: 3%;
+            width: 49%;
         }
     }
+}
+
+//ICON PLACEHOLDER
+.placeHolder {
+    width: 55px;
+    height: 55px;
+    background-color: userV.$turquoiseBlue;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+// SECTION: DISCOVERY STYLES
+.discovery {
+    background-color: userV.$darkTurquoise;
+    position: relative;
+    box-sizing: content-box;
+
+    .itemContainerFlex {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 15%;
+    }
+
+    .itemContainer {
+        width: 42.5%;
+        display: flex;
+    }
+
+    // STYLING FOR IMG CONTAINER
+    .imgContainer {
+        position: absolute;
+    }
+    .imgContainerL {
+        left: 0%;
+        top: -5%;
+    }
+    .imgContainerR {
+        right: 0%;
+        bottom: -5%;
+    }
+
+    // STYLING FOR TEXT CONTAINER
+    .tContainer {
+        padding: 12.5% 2%;
+    }
+    .itemContainer:nth-child(2) .tContainer {
+        text-align: left;
+    }
+    .itemContainer:nth-child(3) .tContainer {
+        text-align: right;
+    }
+}
+
+// SECTION: BANNER DECORATION STYLING
+.banner {
+    background: url(../textilee-assets/banner.jpg);
+    height: 500px;
 }
