@@ -1,1 +1,10 @@
 @use "./variables" as userV;
+
+// SECTION: LEARN NEW TECHNIQUE STYLES
+.learnNewTechniques {
+    background-color: userV.$lightSkyBlue;
+    .itemContainerFlex {
+        padding: 225px 0;
+        display: flex;
+    }
+}
