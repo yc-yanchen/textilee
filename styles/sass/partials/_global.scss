@@ -3,7 +3,8 @@
 //GENERAL STYLING
 html {
     font-size: 62.5%;
-    min-width: 1400px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 img {
@@ -13,13 +14,12 @@ img {
 ul,
 li {
     list-style: none;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 
 .wrapper {
-    width: 80%;
-    max-width: 1200px;
+    max-width: 85%;
     margin: 0 auto;
 }
 

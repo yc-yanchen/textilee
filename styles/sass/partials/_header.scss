@@ -1,0 +1,23 @@
+@use "./variables" as userV;
+
+header {
+    background: url(../textilee-assets/header-home.jpg) no-repeat;
+    padding: 30px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navBar {
+        display: flex;
+        gap: 50px;
+        li {
+            border-bottom: 2px solid rgba(0, 0, 0, 0);
+        }
+        li:hover,
+        li:focus {
+            border-bottom: 2px solid userV.$turquoiseBlue;
+        }
+    }
+}
