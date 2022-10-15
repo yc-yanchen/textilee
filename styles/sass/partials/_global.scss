@@ -5,6 +5,7 @@ html {
     font-size: 62.5%;
     max-width: 1600px;
     margin: 0 auto;
+    background-color: black;
 }
 
 img {
@@ -16,12 +17,6 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-//TEXT CONTAINER STYLES
-.tContainer {
-    display: flex;
-    flex-direction: column;
 }
 
 //WRAPPER STYLES
@@ -52,4 +47,8 @@ li {
 .bLight {
     color: userV.$textBlack;
     background: userV.$lightSkyBlue;
+}
+
+.bLight:visited {
+    color: userV.$textBlack;
 }

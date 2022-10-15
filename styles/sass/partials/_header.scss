@@ -1,11 +1,13 @@
 @use "./variables" as userV;
 
+// HEADER STYLES
 header {
     background: url(../textilee-assets/header-home.jpg) no-repeat;
     padding: 30px 0 0 0;
     height: 755px;
     position: relative;
 
+    // NAVIGATION STYLES
     nav {
         display: flex;
         justify-content: space-between;
