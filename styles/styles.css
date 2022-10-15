@@ -267,7 +267,6 @@ a {
 
 .tLogo {
   color: rgb(30, 23, 19);
-  text-decoration: none;
 }
 .tLogo h1 {
   font-family: "Pacifico", cursive;
@@ -280,7 +279,6 @@ a {
 .tLogo:visited {
   font-weight: 400;
   color: rgb(30, 23, 19);
-  text-decoration: none;
 }
 
 .tSlogan {
@@ -298,13 +296,11 @@ a {
   font-weight: 700;
   letter-spacing: 1.4px;
   color: rgb(26, 49, 92);
-  text-decoration: none;
   text-transform: uppercase;
 }
 
 .tNav:visited {
   color: rgb(26, 49, 92);
-  text-decoration: none;
 }
 
 .tHeading {
@@ -339,12 +335,7 @@ a {
   line-height: 32px;
   font-weight: 400;
   letter-spacing: 1.4px;
-  text-decoration: none;
   padding: 2px 30px;
-}
-
-.tButton:visited {
-  text-decoration: none;
 }
 
 .tCopyright {
@@ -352,6 +343,14 @@ a {
   font-size: 2.1rem;
   color: rgb(255, 255, 255);
   font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 .tBlack {
@@ -370,7 +369,6 @@ html {
   font-size: 62.5%;
   max-width: 1600px;
   margin: 0 auto;
-  background-color: black;
 }
 
 img {
@@ -410,7 +408,7 @@ li {
 
 .bLight {
   color: rgb(22, 21, 21);
-  background: rgb(204, 237, 251);
+  background: rgb(198, 217, 251);
 }
 
 .bLight:visited {
@@ -517,13 +515,26 @@ header .imgContainer {
   width: 49%;
 }
 
-.placeHolder {
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 55px;
   height: 55px;
   background-color: rgb(12, 173, 192);
   border-radius: 50%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+.iconContainer i {
+  color: rgb(255, 255, 255);
+  font-size: 2.75rem;
 }
 
 .discovery {
