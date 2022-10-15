@@ -28,3 +28,19 @@
         gap: 3%;
     }
 }
+
+// SECTION: MORE INFORMATION STYLES
+.moreInformation {
+    background-color: userV.$lightSkyBlue;
+    padding: 5% 0;
+    box-sizing: content-box;
+
+    .itemContainerFlex {
+        display: flex;
+        flex-flow: row wrap;
+
+        .itemContainer {
+            width: 50%;
+        }
+    }
+}

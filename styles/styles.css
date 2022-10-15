@@ -490,3 +490,22 @@ header .imgContainer {
           flex-direction: row;
   gap: 3%;
 }
+
+.moreInformation {
+  background-color: rgb(204, 237, 251);
+  padding: 5% 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.moreInformation .itemContainerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.moreInformation .itemContainerFlex .itemContainer {
+  width: 50%;
+}
