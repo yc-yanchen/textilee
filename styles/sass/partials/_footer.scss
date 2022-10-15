@@ -1,0 +1,7 @@
+@use "./variables" as userV;
+
+footer {
+    text-align: center;
+    background-color: userV.$textBlack;
+    padding: 10px;
+}
