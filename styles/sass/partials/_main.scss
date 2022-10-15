@@ -15,3 +15,16 @@
         }
     }
 }
+
+// SECTION: GALLERY STYLES
+.gallery {
+    background-color: userV.$darkTurquoise;
+    padding: 6% 0;
+    box-sizing: content-box;
+
+    .galleryFlex {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+    }
+}

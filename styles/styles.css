@@ -473,3 +473,20 @@ header .imgContainer {
 .learnNewTechniques .itemContainerFlex .tContainer {
   max-width: 66%;
 }
+
+.gallery {
+  background-color: rgb(33, 64, 79);
+  padding: 6% 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.gallery .galleryFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3%;
+}
