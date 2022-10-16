@@ -112,6 +112,15 @@ a:visited {
     text-decoration: none;
 }
 
+// LARGE PAGE HEADER TYPOGRAPHY (BLOG/GET IN TOUCH)
+.tPageHeader {
+    font-family: "Pacifico", cursive;
+    font-size: 6.8rem;
+    line-height: 64px;
+    font-weight: 400;
+    color: userV.$darkSlateBlue;
+}
+
 // TYPOGRAPHY COLOURS
 .tBlack {
     color: userV.$textBlack;

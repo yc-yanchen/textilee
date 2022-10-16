@@ -353,6 +353,14 @@ a:visited {
   text-decoration: none;
 }
 
+.tPageHeader {
+  font-family: "Pacifico", cursive;
+  font-size: 6.8rem;
+  line-height: 64px;
+  font-weight: 400;
+  color: rgb(26, 49, 92);
+}
+
 .tBlack {
   color: rgb(22, 21, 21);
 }
@@ -415,13 +423,13 @@ li {
   color: rgb(22, 21, 21);
 }
 
-header {
-  background: url(../textilee-assets/header-home.jpg) no-repeat;
+.indexHeader {
+  background: url(../textileeAssets/headerHome.jpg) no-repeat;
   padding: 30px 0 0 0;
   height: 755px;
   position: relative;
 }
-header nav {
+.indexHeader nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,24 +440,24 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
 }
-header nav .navBar {
+.indexHeader nav .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
-header nav .navBar li {
+.indexHeader nav .navBar li {
   border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
-header nav .navBar li:hover,
-header nav .navBar li:focus {
+.indexHeader nav .navBar li:hover,
+.indexHeader nav .navBar li:focus {
   border-bottom: 2px solid rgb(12, 173, 192);
 }
-header h2 {
+.indexHeader h2 {
   margin: 70px 0;
   width: 575px;
 }
-header .imgContainer {
+.indexHeader .imgContainer {
   position: absolute;
   left: 0%;
   max-width: 70%;
@@ -581,7 +589,7 @@ header .imgContainer {
 }
 
 .banner {
-  background: url(../textilee-assets/banner.jpg);
+  background: url(../textileeAssets/banner.jpg);
   height: 500px;
 }
 
@@ -594,8 +602,47 @@ header .imgContainer {
   margin-bottom: 75px;
 }
 
-footer {
+.indexFooter {
   text-align: center;
   background-color: rgb(22, 21, 21);
   padding: 10px;
+}
+
+.blogHeader {
+  background: url(../textileeAssets/blogHeader.jpg) no-repeat;
+  padding: 30px 0 0 0;
+  height: 568px;
+}
+.blogHeader nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blogHeader nav .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+.blogHeader nav .navBar li {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.blogHeader nav .navBar li:hover,
+.blogHeader nav .navBar li:focus {
+  border-bottom: 2px solid rgb(12, 173, 192);
+}
+.blogHeader h2 {
+  margin: 70px 0;
+  width: 575px;
+}
+.blogHeader .imgContainer {
+  position: absolute;
+  left: 0%;
+  max-width: 70%;
 }
