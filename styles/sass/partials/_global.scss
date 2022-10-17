@@ -8,10 +8,17 @@ html {
     background-color: black;
 }
 
+//WRAPPER STYLES
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 img {
     max-width: 100%;
 }
 
+// LIST STYLE REMOVER
 ul,
 li {
     list-style: none;
@@ -19,10 +26,14 @@ li {
     padding: 0;
 }
 
-//WRAPPER STYLES
-.wrapper {
-    max-width: 80%;
-    margin: 0 auto;
+// LIST STYLE APPLYER (ADD CLASS TO ul)
+.listStyle {
+    margin: 10px 0 10px 30px;
+    li {
+        list-style: disc;
+        // list-style-position: inside;
+        padding-left: 5px;
+    }
 }
 
 //IMAGE DROP SHADOW

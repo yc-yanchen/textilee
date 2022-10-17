@@ -330,6 +330,14 @@ a {
   margin-bottom: 50px;
 }
 
+.tList {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
 .tLogo {
   color: rgb(30, 23, 19);
 }
@@ -408,6 +416,11 @@ html {
   background-color: black;
 }
 
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
 }
@@ -419,9 +432,12 @@ li {
   padding: 0;
 }
 
-.wrapper {
-  max-width: 80%;
-  margin: 0 auto;
+.listStyle {
+  margin: 10px 0 10px 30px;
+}
+.listStyle li {
+  list-style: disc;
+  padding-left: 5px;
 }
 
 .imgShadowR {
@@ -531,8 +547,6 @@ footer {
 .gallery {
   background-color: rgb(33, 64, 79);
   padding: 6% 0;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
 }
 .gallery .galleryFlex {
   display: -webkit-box;
@@ -548,8 +562,6 @@ footer {
 .moreInformation {
   background-color: rgb(204, 237, 251);
   padding: 5% 0;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
 }
 .moreInformation .itemContainerFlex {
   display: -webkit-box;
@@ -594,8 +606,6 @@ footer {
 .discovery {
   background-color: rgb(33, 64, 79);
   position: relative;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
 }
 .discovery .itemContainerFlex {
   display: -webkit-box;
@@ -661,4 +671,39 @@ footer {
   position: absolute;
   left: 0%;
   max-width: 70%;
+}
+
+.blogMain {
+  background-color: rgb(204, 237, 251);
+  position: relative;
+}
+
+.ourNewCollection {
+  background-color: rgb(33, 64, 79);
+  width: 60%;
+  position: relative;
+  border-bottom: 10px solid rgb(12, 173, 192);
+  border-right: 10px solid rgb(12, 173, 192);
+}
+.ourNewCollection .imgContainer {
+  position: relative;
+  top: -150px;
+  width: 99.2%;
+}
+.ourNewCollection .blogTextContainer {
+  width: 80%;
+  margin: -50px 0 10% 12.5%;
+}
+
+.ourMission {
+  background-color: rgb(33, 64, 79);
+  width: 22.5%;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  padding: 0 0 20px 20px;
+}
+.ourMission .imgContainer {
+  position: relative;
+  top: -15px;
 }
