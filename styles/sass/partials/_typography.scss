@@ -1,7 +1,5 @@
 @use "./variables" as userV;
 
-// WHEN USING REM FOR FONT SIZE, DOES LINE HEIGHT AND LETTER SPACING HAVE TO USE REM TOO?
-
 //TYPOGRAPHY PADDING AND MARGIN
 h1,
 h2,
@@ -15,7 +13,7 @@ a {
     padding: 0;
 }
 
-// SLOGAN TYPOGRAPHY (TEXTILES FOR ALL PROJECTS IN MIND)
+// SLOGAN TYPOGRAPHY (TEXTILES FOR ALL...)
 .tSlogan {
     font-family: "Pacifico", cursive;
     font-size: 5.8rem;
@@ -24,8 +22,8 @@ a {
     color: userV.$darkSlateBlue;
 }
 
-// LARGE HEADING (BLOG/GET IN TOUCH)
-.tLargeHeading {
+// LARGE HEADING (BLOG/GET IN...)
+.tLargerHeading {
     font-family: "Pacifico", cursive;
     font-size: 6.8rem;
     line-height: 64px;
@@ -52,12 +50,38 @@ a {
     letter-spacing: 2.5px;
 }
 
+// ASIDE HEADING TYPOGRAPHY (OUR MISSION...)
+.tAsideHeading {
+    font-family: "Pacifico", cursive;
+    font-size: 3.5rem;
+    letter-spacing: 2.9px;
+    font-weight: 400;
+}
+
+// COMMENT HEADING TYPOGRAPHY (COMMENTS)
+.tComment {
+    font-family: "Pacifico", cursive;
+    font-size: 4rem;
+    letter-spacing: 4.3px;
+    font-weight: 400;
+}
+
 // BODY TYPOGRAPHY
 .tBody {
     font-family: "Lato", sans-serif;
     font-size: 2rem;
     line-height: 28px;
     font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+// DATE TYPOGRAPHY
+.tDate {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    line-height: 28px;
+    font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 50px;
 }
@@ -111,16 +135,6 @@ a:visited {
     font-weight: 400;
     letter-spacing: 1.4px;
     padding: 2px 30px;
-}
-
-// DATE TYPOGRAPHY
-.tDate {
-    font-family: "Lato", sans-serif;
-    font-size: 2rem;
-    line-height: 28px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 50px;
 }
 
 // COPYRIGHT TYPOGRAPHY

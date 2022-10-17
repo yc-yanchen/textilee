@@ -273,7 +273,7 @@ a {
   color: rgb(26, 49, 92);
 }
 
-.tLargeHeading {
+.tLargerHeading {
   font-family: "Pacifico", cursive;
   font-size: 6.8rem;
   line-height: 64px;
@@ -298,11 +298,34 @@ a {
   letter-spacing: 2.5px;
 }
 
+.tAsideHeading {
+  font-family: "Pacifico", cursive;
+  font-size: 3.5rem;
+  letter-spacing: 2.9px;
+  font-weight: 400;
+}
+
+.tComment {
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+  letter-spacing: 4.3px;
+  font-weight: 400;
+}
+
 .tBody {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   line-height: 28px;
   font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.tDate {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 28px;
+  font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 50px;
 }
@@ -352,15 +375,6 @@ a:visited {
   font-weight: 400;
   letter-spacing: 1.4px;
   padding: 2px 30px;
-}
-
-.tDate {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  line-height: 28px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 50px;
 }
 
 .tCopyright {
@@ -417,6 +431,16 @@ li {
 .imgShadowL {
   -webkit-box-shadow: -15px 15px rgb(12, 173, 192);
           box-shadow: -15px 15px rgb(12, 173, 192);
+}
+
+.imgLargerShadowR {
+  -webkit-box-shadow: 27px 28px 0 -9px rgb(12, 173, 192);
+          box-shadow: 27px 28px 0 -9px rgb(12, 173, 192);
+}
+
+.imgLargerShadowL {
+  -webkit-box-shadow: -27px 28px 0 -9px rgb(12, 173, 192);
+          box-shadow: -27px 28px 0 -9px rgb(12, 173, 192);
 }
 
 .bDark {
