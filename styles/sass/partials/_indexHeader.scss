@@ -1,9 +1,11 @@
 @use "./variables" as userV;
 
-.blogHeader {
-    background: url(../textileeAssets/blogHeader.jpg) no-repeat;
+// HEADER STYLES
+.indexHeader {
+    background: url(../textileeAssets/headerHome.jpg) no-repeat;
     padding: 30px 0 0 0;
-    height: 568px;
+    height: 755px;
+    position: relative;
 
     h2 {
         margin: 70px 0;

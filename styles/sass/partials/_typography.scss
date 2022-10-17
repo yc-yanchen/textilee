@@ -15,24 +15,7 @@ a {
     padding: 0;
 }
 
-// LOGO TYPOGRAPHY
-.tLogo {
-    color: userV.$logoBlack;
-    h1 {
-        font-family: "Pacifico", cursive;
-        font-size: 3rem;
-        line-height: 24px;
-        letter-spacing: 1.7px;
-        font-weight: 400;
-    }
-}
-
-.tLogo:visited {
-    font-weight: 400;
-    color: userV.$logoBlack;
-}
-
-// SLOGAN TYPOGRAPHY
+// SLOGAN TYPOGRAPHY (TEXTILES FOR ALL PROJECTS IN MIND)
 .tSlogan {
     font-family: "Pacifico", cursive;
     font-size: 5.8rem;
@@ -41,22 +24,16 @@ a {
     color: userV.$darkSlateBlue;
 }
 
-// NAVIGATION TYPOGRAPHY
-.tNav {
-    font-family: "Lato", sans-serif;
-    font-size: 2rem;
-    line-height: 29px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    color: userV.$darkSlateBlue;
-    text-transform: uppercase;
-}
-
-.tNav:visited {
+// LARGE HEADING (BLOG/GET IN TOUCH)
+.tLargeHeading {
+    font-family: "Pacifico", cursive;
+    font-size: 6.8rem;
+    line-height: 64px;
+    font-weight: 400;
     color: userV.$darkSlateBlue;
 }
 
-// SECTION HEADING TYPOGRAPHY
+// MEDIUM HEADING TYPOGRAPHY (LEARN NEW..., OUR NEW...)
 .tHeading {
     font-family: "Pacifico", cursive;
     font-size: 4.3rem;
@@ -66,7 +43,7 @@ a {
     margin-bottom: 15px;
 }
 
-// SMALLER SECTION TYPOGRAPHY
+// SMALLER HEADING TYPOGRAPHY (DISCOVER...)
 .tSmallerHeading {
     font-family: "Pacifico", cursive;
     font-size: 4rem;
@@ -85,22 +62,36 @@ a {
     margin-bottom: 50px;
 }
 
-// BUTTON TYPOGRAPHY
-.tButton {
-    font-family: "Pacifico", cursive;
-    font-size: 2.7rem;
-    line-height: 32px;
-    font-weight: 400;
-    letter-spacing: 1.4px;
-    padding: 2px 30px;
+// LOGO TYPOGRAPHY
+.tLogo {
+    color: userV.$logoBlack;
+    h1 {
+        font-family: "Pacifico", cursive;
+        font-size: 3rem;
+        line-height: 24px;
+        letter-spacing: 1.7px;
+        font-weight: 400;
+    }
 }
 
-// COPYRIGHT TYPOGRAPHY
-.tCopyright {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.1rem;
-    color: userV.$white;
+.tLogo:visited {
     font-weight: 400;
+    color: userV.$logoBlack;
+}
+
+// NAVIGATION TYPOGRAPHY
+.tNav {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: userV.$darkSlateBlue;
+    text-transform: uppercase;
+}
+
+.tNav:visited {
+    color: userV.$darkSlateBlue;
 }
 
 // ANCHOR TYPOGRAPHY
@@ -112,24 +103,47 @@ a:visited {
     text-decoration: none;
 }
 
-// LARGE PAGE HEADER TYPOGRAPHY (BLOG/GET IN TOUCH)
-.tPageHeader {
+// BUTTON TYPOGRAPHY
+.tButton {
     font-family: "Pacifico", cursive;
-    font-size: 6.8rem;
-    line-height: 64px;
+    font-size: 2.7rem;
+    line-height: 32px;
     font-weight: 400;
-    color: userV.$darkSlateBlue;
+    letter-spacing: 1.4px;
+    padding: 2px 30px;
+}
+
+// DATE TYPOGRAPHY
+.tDate {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    line-height: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+// COPYRIGHT TYPOGRAPHY
+.tCopyright {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1rem;
+    color: userV.$white;
+    font-weight: 400;
 }
 
 // TYPOGRAPHY COLOURS
-.tBlack {
+.cBlack {
     color: userV.$textBlack;
 }
 
-.tBlue {
+.cDarkSlateBlue {
     color: userV.$darkSlateBlue;
 }
 
-.tWhite {
+.cLightSkyBlue {
+    color: userV.$lightSkyBlue;
+}
+
+.cWhite {
     color: userV.$white;
 }

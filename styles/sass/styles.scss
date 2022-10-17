@@ -1,8 +1,14 @@
+// SHARED STYLES
 @use "./partials/setup";
 @use "./partials/variables";
 @use "./partials/typography";
 @use "./partials/global";
-@use "./partials/header";
-@use "./partials/main";
+@use "./partials/navigation";
 @use "./partials/footer";
+
+// INDEX STYLES
+@use "./partials/indexHeader";
+@use "./partials/indexMain";
+
+// BLOG STYLES
 @use "./partials/blogHeader";

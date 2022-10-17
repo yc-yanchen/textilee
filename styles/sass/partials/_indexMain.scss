@@ -10,7 +10,7 @@
         justify-content: space-between;
         align-items: center;
 
-        .tContainer {
+        .indexTextContainer {
             max-width: 66%;
         }
     }
@@ -95,13 +95,13 @@
     }
 
     // STYLING FOR TEXT CONTAINER
-    .tContainer {
+    .indexTextContainer {
         padding: 12.5% 2%;
     }
-    .itemContainer:nth-child(2) .tContainer {
+    .itemContainer:nth-child(2) .indexTextContainer {
         text-align: left;
     }
-    .itemContainer:nth-child(3) .tContainer {
+    .itemContainer:nth-child(3) .indexTextContainer {
         text-align: right;
     }
 }
