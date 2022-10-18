@@ -22,7 +22,7 @@
 
     .blogTextContainer {
         width: 80%;
-        margin: -50px 0 10% 12.5%;
+        margin: -50px 0 10% 17%;
     }
 }
 
@@ -38,5 +38,28 @@
     .imgContainer {
         position: relative;
         top: -15px;
+    }
+}
+
+// SECTION: COMMENTS
+.comments {
+    width: 60%;
+
+    h4 {
+        padding: 50px 0;
+    }
+
+    h6 {
+        margin: 0px 0 10px 0;
+    }
+
+    .userComments {
+        display: flex;
+        gap: 5%;
+        padding: 0 0 50px 0;
+
+        .blogTextContainer {
+            width: 80%;
+        }
     }
 }

@@ -43,8 +43,8 @@
 
         <!-- MAIN SECTION -->
         <main class="blogMain">
-            <!-- SECTION: OUR NEW COLLECTION -->
-            <section class="ourNewCollection">
+            <!-- ARTICLE: OUR NEW COLLECTION -->
+            <article class="ourNewCollection">
                 <div class="imgContainer">
                     <img
                         class="imgLargerShadowR"
@@ -53,10 +53,13 @@
                     />
                 </div>
                 <!-- .imgContainer END -->
-                <article class="blogTextContainer">
+                <div class="blogTextContainer">
                     <h3 class="tHeading cWhite">Our new collection</h3>
                     <h6 class="tDate cLightSkyBlue">
-                        Monday, October 5th, 2019 by Saron
+                        <time datetime="2019-10-05"
+                            >Monday, October 5th, 2019</time
+                        >
+                        by Saron
                     </h6>
                     <p class="tBody cWhite">
                         Curabitur lobortis id lorem id bidendum. Ut id
@@ -90,18 +93,18 @@
                         luctus. Aenean tincidunt turpis sed dui aliquam
                         vehicula.
                     </p>
-                </article>
-            </section>
-            <!-- SECTION: OUR MISSION -->
-            <section class="ourMission">
+                </div>
+            </article>
+            <!-- ASIDE: OUR MISSION -->
+            <aside class="ourMission">
                 <div class="imgContainer">
                     <img
                         src="./textileeAssets/sidebar-image.jpg"
                         alt="ADD SOME DESCRIPTION"
                     />
                 </div>
-                <aside class="blogTextContainer">
-                    <h4 class="tAsideHeading cWhite">Our mission</h4>
+                <div class="blogTextContainer">
+                    <h5 class="tAsideHeading cWhite">Our mission</h5>
                     <p class="tBody cWhite">
                         Nam dapibus nisl vitae elit fringilla rutrum. Aenean
                         sollicitudin, erat a elementum. Find out more.
@@ -113,9 +116,56 @@
                         <li class="tList cWhite">Semper sed sapien metus</li>
                         <li class="tList cWhite">Scelerique nec pharetra</li>
                     </ul>
-                </aside>
-            </section>
+                </div>
+            </aside>
             <!-- SECTION: COMMENTS -->
+            <div class="wrapper">
+                <section class="comments">
+                    <h4 class="tComments cBlack">Comments:</h4>
+                    <article class="userComments">
+                        <div class="imgContainer">
+                            <img src="./textileeAssets/commentOne.jpg" alt="" />
+                        </div>
+                        <!-- .imgContainer END -->
+                        <div class="blogTextContainer">
+                            <h6 class="tDate cDarkSlateBlue">
+                                <time datetime="2019-12-09"
+                                    >December 9th, 2019</time
+                                >
+                                by Louise
+                            </h6>
+                            <p class="tBody cBlack">
+                                Fusce behicula dolor arcum sit amet blandit
+                                dolor mollis nec. Donec viverra eleifend lacus,
+                                vitae ullamcorper metus. Sed sollicitudin ipsum
+                                quis nunc sollicitudin ultrices. Donec euismod
+                                scelerisque ligula. Mawcenas eu varius risus..
+                            </p>
+                        </div>
+                    </article>
+                    <article class="userComments">
+                        <div class="imgContainer">
+                            <img src="./textileeAssets/commentTwo.jpg" alt="" />
+                        </div>
+                        <!-- .imgContainer END -->
+                        <div class="blogTextContainer">
+                            <h6 class="tDate cDarkSlateBlue">
+                                <time datetime="2019-12-10"
+                                    >December 9th, 2019</time
+                                >
+                                by JP
+                            </h6>
+                            <p class="tBody cBlack">
+                                Donec viverra eleifend lacus, vitae ullamcorper
+                                metus. Sed sollicitudin ipsum quis nunc
+                                sollicitudin ultrices. Donec euismod scelerisque
+                                ligula.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <!-- .wrapper END -->
         </main>
         <!-- FOOTER -->
         <footer>

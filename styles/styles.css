@@ -305,7 +305,7 @@ a {
   font-weight: 400;
 }
 
-.tComment {
+.tComments {
   font-family: "Pacifico", cursive;
   font-size: 4rem;
   letter-spacing: 4.3px;
@@ -692,7 +692,7 @@ footer {
 }
 .ourNewCollection .blogTextContainer {
   width: 80%;
-  margin: -50px 0 10% 12.5%;
+  margin: -50px 0 10% 17%;
 }
 
 .ourMission {
@@ -706,4 +706,24 @@ footer {
 .ourMission .imgContainer {
   position: relative;
   top: -15px;
+}
+
+.comments {
+  width: 60%;
+}
+.comments h4 {
+  padding: 50px 0;
+}
+.comments h6 {
+  margin: 0px 0 10px 0;
+}
+.comments .userComments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5%;
+  padding: 0 0 50px 0;
+}
+.comments .userComments .blogTextContainer {
+  width: 80%;
 }
