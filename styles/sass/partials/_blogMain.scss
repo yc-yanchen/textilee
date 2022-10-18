@@ -63,3 +63,29 @@
         }
     }
 }
+
+// SECTION: FORM STYLING
+.commentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    input,
+    textarea {
+        background-color: inherit;
+        padding: 25px;
+        border: 1px solid userV.$turquoiseBlue;
+    }
+
+    .userInformation {
+        width: 100%;
+        display: flex;
+        gap: 10%;
+        input {
+            width: 45%;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+    }
+}

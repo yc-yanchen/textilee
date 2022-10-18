@@ -127,6 +127,17 @@ a {
     color: userV.$darkSlateBlue;
 }
 
+// PLACEHOLDER TYPOGRAPHY
+.tPlaceholder,
+.tPlaceholder::placeholder {
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: userV.$darkSlateBlue;
+}
+
 // ANCHOR TYPOGRAPHY
 a {
     text-decoration: none;

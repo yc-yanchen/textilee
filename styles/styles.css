@@ -368,6 +368,52 @@ a {
   color: rgb(26, 49, 92);
 }
 
+.tPlaceholder::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgb(26, 49, 92);
+}
+
+.tPlaceholder::-moz-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgb(26, 49, 92);
+}
+
+.tPlaceholder:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgb(26, 49, 92);
+}
+
+.tPlaceholder::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgb(26, 49, 92);
+}
+
+.tPlaceholder,
+.tPlaceholder::placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgb(26, 49, 92);
+}
+
 a {
   text-decoration: none;
 }
@@ -726,4 +772,34 @@ footer {
 }
 .comments .userComments .blogTextContainer {
   width: 80%;
+}
+
+.commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+.commentForm input,
+.commentForm textarea {
+  background-color: inherit;
+  padding: 25px;
+  border: 1px solid rgb(12, 173, 192);
+}
+.commentForm .userInformation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+}
+.commentForm .userInformation input {
+  width: 45%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
