@@ -5,7 +5,7 @@ html {
     font-size: 62.5%;
     max-width: 1600px;
     margin: 0 auto;
-    background-color: black;
+    // background-color: userV.$lightSkyBlue;
 }
 
 //WRAPPER STYLES
@@ -16,6 +16,7 @@ html {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 // LIST STYLE REMOVER
@@ -31,7 +32,6 @@ li {
     margin: 10px 0 10px 30px;
     li {
         list-style: disc;
-        // list-style-position: inside;
         padding-left: 5px;
     }
 }

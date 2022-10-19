@@ -124,7 +124,11 @@
                     <h4 class="tComments cBlack">Comments:</h4>
                     <article class="userComments">
                         <div class="imgContainer">
-                            <img src="./textileeAssets/commentOne.jpg" alt="" />
+                            <a href="#"
+                                ><img
+                                    src="./textileeAssets/commentOne.jpg"
+                                    alt=""
+                            /></a>
                         </div>
                         <!-- .imgContainer END -->
                         <div class="blogTextContainer">
@@ -145,7 +149,11 @@
                     </article>
                     <article class="userComments">
                         <div class="imgContainer">
-                            <img src="./textileeAssets/commentTwo.jpg" alt="" />
+                            <a href="#"
+                                ><img
+                                    src="./textileeAssets/commentTwo.jpg"
+                                    alt=""
+                            /></a>
                         </div>
                         <!-- .imgContainer END -->
                         <div class="blogTextContainer">
@@ -172,6 +180,7 @@
                                 id="userName"
                                 placeholder="Name"
                                 class="tPlaceholder"
+                                aria-label="username"
                             />
                             <input
                                 type="email"
@@ -179,8 +188,10 @@
                                 id="userEmail"
                                 placeholder="Email address"
                                 class="tPlaceholder"
+                                aria-label="email"
                             />
                         </div>
+                        <!-- .userInformation END -->
                         <textarea
                             name="userComments"
                             id="userComments"
@@ -189,7 +200,9 @@
                             placeholder="Comment"
                             class="tPlaceholder"
                         ></textarea>
-                        <button type="submit">post comment</button>
+                        <button type="submit" class="tButton bDark">
+                            post comment
+                        </button>
                     </form>
                 </section>
             </div>
