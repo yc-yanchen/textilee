@@ -456,6 +456,7 @@ html {
   font-size: 62.5%;
   max-width: 1600px;
   margin: 0 auto;
+  background-color: black;
 }
 
 .wrapper {
@@ -501,24 +502,6 @@ li {
 .imgLargerShadowL {
   -webkit-box-shadow: -27px 28px 0 -9px rgb(12, 173, 192);
           box-shadow: -27px 28px 0 -9px rgb(12, 173, 192);
-}
-
-.bDark {
-  color: rgb(255, 255, 255);
-  background: rgb(26, 49, 92);
-}
-
-.bDark:visited {
-  color: rgb(255, 255, 255);
-}
-
-.bLight {
-  color: rgb(22, 21, 21);
-  background: rgb(198, 217, 251);
-}
-
-.bLight:visited {
-  color: rgb(22, 21, 21);
 }
 
 nav {
@@ -651,6 +634,24 @@ footer {
 .fDark .tPlaceholder,
 .fDark .tPlaceholder:focus {
   color: rgb(255, 255, 255);
+}
+
+.bDark {
+  color: rgb(255, 255, 255);
+  background: rgb(26, 49, 92);
+}
+
+.bDark:visited {
+  color: rgb(255, 255, 255);
+}
+
+.bLight {
+  color: rgb(22, 21, 21);
+  background: rgb(198, 217, 251);
+}
+
+.bLight:visited {
+  color: rgb(22, 21, 21);
 }
 
 .indexHeader {
