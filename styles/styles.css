@@ -643,6 +643,26 @@ footer {
   color: rgb(22, 21, 21);
 }
 
+.imgShadowR {
+  -webkit-box-shadow: 15px 15px rgb(12, 173, 192);
+          box-shadow: 15px 15px rgb(12, 173, 192);
+}
+
+.imgShadowL {
+  -webkit-box-shadow: -15px 15px rgb(12, 173, 192);
+          box-shadow: -15px 15px rgb(12, 173, 192);
+}
+
+.imgLargerShadowR {
+  -webkit-box-shadow: 27px 28px 0 -9px rgb(12, 173, 192);
+          box-shadow: 27px 28px 0 -9px rgb(12, 173, 192);
+}
+
+.imgLargerShadowL {
+  -webkit-box-shadow: -27px 28px 0 -9px rgb(12, 173, 192);
+          box-shadow: -27px 28px 0 -9px rgb(12, 173, 192);
+}
+
 .indexHeader {
   background: url(../textileeAssets/headerHome.jpg) no-repeat;
   padding: 30px 0 0 0;
