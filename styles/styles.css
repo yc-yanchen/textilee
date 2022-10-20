@@ -440,26 +440,6 @@ li {
   padding-left: 5px;
 }
 
-.imgShadowR {
-  -webkit-box-shadow: 15px 15px rgb(12, 173, 192);
-          box-shadow: 15px 15px rgb(12, 173, 192);
-}
-
-.imgShadowL {
-  -webkit-box-shadow: -15px 15px rgb(12, 173, 192);
-          box-shadow: -15px 15px rgb(12, 173, 192);
-}
-
-.imgLargerShadowR {
-  -webkit-box-shadow: 27px 28px 0 -9px rgb(12, 173, 192);
-          box-shadow: 27px 28px 0 -9px rgb(12, 173, 192);
-}
-
-.imgLargerShadowL {
-  -webkit-box-shadow: -27px 28px 0 -9px rgb(12, 173, 192);
-          box-shadow: -27px 28px 0 -9px rgb(12, 173, 192);
-}
-
 .bDark {
   color: rgb(255, 255, 255);
   background: rgb(26, 49, 92);

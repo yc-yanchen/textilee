@@ -1,0 +1,19 @@
+@use "./variables" as userV;
+
+//IMAGE DROP SHADOW
+.imgShadowR {
+    box-shadow: 15px 15px userV.$turquoiseBlue;
+}
+
+.imgShadowL {
+    box-shadow: -15px 15px userV.$turquoiseBlue;
+}
+
+//IMAGE DROP SHADOW LARGER OFFSET
+.imgLargerShadowR {
+    box-shadow: 27px 28px 0 -9px userV.$turquoiseBlue;
+}
+
+.imgLargerShadowL {
+    box-shadow: -27px 28px 0 -9px userV.$turquoiseBlue;
+}
