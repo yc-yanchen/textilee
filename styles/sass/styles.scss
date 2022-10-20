@@ -5,6 +5,8 @@
 @use "./partials/global";
 @use "./partials/navigation";
 @use "./partials/footer";
+@use "./partials/form";
+@use "./partials/button";
 
 // INDEX STYLES
 @use "./partials/indexHeader";
@@ -13,3 +15,7 @@
 // BLOG STYLES
 @use "./partials/blogHeader";
 @use "./partials/blogMain";
+
+// CONTACT STYLES
+@use "./partials/contactHeader";
+@use "./partials/contactMain";

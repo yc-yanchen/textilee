@@ -1,0 +1,73 @@
+@use "./variables" as userV;
+
+.commentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    input,
+    textarea {
+        background-color: inherit;
+        padding: 25px;
+        border: 1px solid userV.$turquoiseBlue;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+    }
+
+    .userInformation {
+        width: 100%;
+        display: flex;
+        gap: 10%;
+        input {
+            width: 45%;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        padding: 9px 0;
+        border: none;
+    }
+}
+
+// FORM THEMES (DARK/LIGHT)
+.fLight {
+    input,
+    textarea {
+        background-color: inherit;
+    }
+    input:focus::placeholder,
+    textarea:focus::placeholder {
+        color: userV.$darkSlateBlue;
+        opacity: 0.9;
+    }
+    .tPlaceholder,
+    .tPlaceholder:focus {
+        color: userV.$darkSlateBlue;
+    }
+}
+
+.fDark {
+    input,
+    textarea {
+        background-color: userV.$darkTurquoise;
+    }
+    input:focus::placeholder,
+    textarea:focus::placeholder {
+        color: userV.$white;
+        opacity: 0.9;
+    }
+    .tPlaceholder,
+    .tPlaceholder:focus {
+        color: userV.$white;
+    }
+}

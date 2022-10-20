@@ -318,7 +318,7 @@ a {
   line-height: 28px;
   font-weight: 400;
   letter-spacing: 2px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .tDate {
@@ -327,7 +327,7 @@ a {
   line-height: 28px;
   font-weight: 700;
   letter-spacing: 2px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .tList {
@@ -368,6 +368,47 @@ a {
   color: rgb(26, 49, 92);
 }
 
+.tPlaceholder::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.tPlaceholder::-moz-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.tPlaceholder:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.tPlaceholder::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.tPlaceholder,
+.tPlaceholder::placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
 a {
   text-decoration: none;
 }
@@ -382,7 +423,18 @@ a:visited {
   line-height: 32px;
   font-weight: 400;
   letter-spacing: 1.4px;
-  padding: 2px 30px;
+  padding: 8px 30px;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.tContact {
+  font-family: "Lato", sans-serif;
+  font-size: 2.2rem;
+  line-height: 35px;
+  font-weight: 400;
+  letter-spacing: 2.2px;
+  margin-bottom: 35px;
 }
 
 .tCopyright {
@@ -423,6 +475,7 @@ html {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 ul,
@@ -438,24 +491,6 @@ li {
 .listStyle li {
   list-style: disc;
   padding-left: 5px;
-}
-
-.bDark {
-  color: rgb(255, 255, 255);
-  background: rgb(26, 49, 92);
-}
-
-.bDark:visited {
-  color: rgb(255, 255, 255);
-}
-
-.bLight {
-  color: rgb(22, 21, 21);
-  background: rgb(198, 217, 251);
-}
-
-.bLight:visited {
-  color: rgb(22, 21, 21);
 }
 
 nav {
@@ -487,6 +522,125 @@ footer {
   text-align: center;
   background-color: rgb(22, 21, 21);
   padding: 10px;
+}
+
+.commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+.commentForm input,
+.commentForm textarea {
+  background-color: inherit;
+  padding: 25px;
+  border: 1px solid rgb(12, 173, 192);
+}
+.commentForm input:focus,
+.commentForm textarea:focus {
+  outline: none;
+}
+.commentForm .userInformation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+}
+.commentForm .userInformation input {
+  width: 45%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.commentForm textarea {
+  resize: none;
+}
+.commentForm button {
+  padding: 9px 0;
+  border: none;
+}
+
+.fLight input,
+.fLight textarea {
+  background-color: inherit;
+}
+.fLight input:focus::-webkit-input-placeholder, .fLight textarea:focus::-webkit-input-placeholder {
+  color: rgb(26, 49, 92);
+  opacity: 0.9;
+}
+.fLight input:focus::-moz-placeholder, .fLight textarea:focus::-moz-placeholder {
+  color: rgb(26, 49, 92);
+  opacity: 0.9;
+}
+.fLight input:focus:-ms-input-placeholder, .fLight textarea:focus:-ms-input-placeholder {
+  color: rgb(26, 49, 92);
+  opacity: 0.9;
+}
+.fLight input:focus::-ms-input-placeholder, .fLight textarea:focus::-ms-input-placeholder {
+  color: rgb(26, 49, 92);
+  opacity: 0.9;
+}
+.fLight input:focus::placeholder,
+.fLight textarea:focus::placeholder {
+  color: rgb(26, 49, 92);
+  opacity: 0.9;
+}
+.fLight .tPlaceholder,
+.fLight .tPlaceholder:focus {
+  color: rgb(26, 49, 92);
+}
+
+.fDark input,
+.fDark textarea {
+  background-color: rgb(33, 64, 79);
+}
+.fDark input:focus::-webkit-input-placeholder, .fDark textarea:focus::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.fDark input:focus::-moz-placeholder, .fDark textarea:focus::-moz-placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.fDark input:focus:-ms-input-placeholder, .fDark textarea:focus:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.fDark input:focus::-ms-input-placeholder, .fDark textarea:focus::-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.fDark input:focus::placeholder,
+.fDark textarea:focus::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.fDark .tPlaceholder,
+.fDark .tPlaceholder:focus {
+  color: rgb(255, 255, 255);
+}
+
+.bDark {
+  color: rgb(255, 255, 255);
+  background: rgb(26, 49, 92);
+}
+
+.bDark:visited {
+  color: rgb(255, 255, 255);
+}
+
+.bLight {
+  color: rgb(22, 21, 21);
+  background: rgb(198, 217, 251);
+}
+
+.bLight:visited {
+  color: rgb(22, 21, 21);
 }
 
 .indexHeader {
@@ -644,7 +798,7 @@ footer {
   height: 568px;
 }
 .blogHeader h2 {
-  margin: 70px 0;
+  margin: 125px 0;
   width: 575px;
 }
 .blogHeader .imgContainer {
@@ -656,11 +810,12 @@ footer {
 .blogMain {
   background-color: rgb(204, 237, 251);
   position: relative;
+  padding-bottom: 100px;
 }
 
 .ourNewCollection {
   background-color: rgb(33, 64, 79);
-  width: 60%;
+  width: 62.5%;
   position: relative;
   border-bottom: 10px solid rgb(12, 173, 192);
   border-right: 10px solid rgb(12, 173, 192);
@@ -672,7 +827,7 @@ footer {
 }
 .ourNewCollection .blogTextContainer {
   width: 80%;
-  margin: -50px 0 10% 17%;
+  margin: -60px 0 10% 16%;
 }
 
 .ourMission {
@@ -706,4 +861,65 @@ footer {
 }
 .comments .userComments .blogTextContainer {
   width: 80%;
+}
+
+.contactHeader {
+  background: url(../textileeAssets/contactHeader.jpg) no-repeat;
+  padding: 30px 0 0 0;
+  height: 576px;
+}
+.contactHeader h2 {
+  margin: 125px 0;
+  width: 575px;
+}
+.contactHeader .imgContainer {
+  position: absolute;
+  left: 0%;
+  max-width: 70%;
+}
+
+.contactMain {
+  background-color: rgb(204, 237, 251);
+  position: relative;
+}
+
+.contactFormContainer {
+  background-color: rgb(33, 64, 79);
+  width: 62.5%;
+  padding: 75px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+  bottom: 150px;
+  right: 5%;
+}
+
+.textileeInformation {
+  position: absolute;
+  right: 7.5%;
+  top: 100px;
+  display: inline-block;
+}
+.textileeInformation .socialMediaFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+}
+.textileeInformation .socialMediaFlex i {
+  color: rgb(26, 49, 92);
+  font-size: 2.75rem;
+}
+.textileeInformation p {
+  margin: 30px 0;
+}
+
+.address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

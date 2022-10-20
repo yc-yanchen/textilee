@@ -124,7 +124,11 @@
                     <h4 class="tComments cBlack">Comments:</h4>
                     <article class="userComments">
                         <div class="imgContainer">
-                            <img src="./textileeAssets/commentOne.jpg" alt="" />
+                            <a href="#"
+                                ><img
+                                    src="./textileeAssets/commentOne.jpg"
+                                    alt=""
+                            /></a>
                         </div>
                         <!-- .imgContainer END -->
                         <div class="blogTextContainer">
@@ -145,7 +149,11 @@
                     </article>
                     <article class="userComments">
                         <div class="imgContainer">
-                            <img src="./textileeAssets/commentTwo.jpg" alt="" />
+                            <a href="#"
+                                ><img
+                                    src="./textileeAssets/commentTwo.jpg"
+                                    alt=""
+                            /></a>
                         </div>
                         <!-- .imgContainer END -->
                         <div class="blogTextContainer">
@@ -163,6 +171,39 @@
                             </p>
                         </div>
                     </article>
+                    <!-- SECTION: FORM -->
+                    <form action="#" class="commentForm fLight">
+                        <div class="userInformation">
+                            <input
+                                type="text"
+                                name="userName"
+                                id="userName"
+                                placeholder="Name"
+                                class="tPlaceholder"
+                                aria-label="username"
+                            />
+                            <input
+                                type="email"
+                                name="userEmail"
+                                id="userEmail"
+                                placeholder="Email address"
+                                class="tPlaceholder"
+                                aria-label="email"
+                            />
+                        </div>
+                        <!-- .userInformation END -->
+                        <textarea
+                            name="userComments"
+                            id="userComments"
+                            cols="30"
+                            rows="6"
+                            placeholder="Comment"
+                            class="tPlaceholder"
+                        ></textarea>
+                        <button type="submit" class="tButton bDark">
+                            post comment
+                        </button>
+                    </form>
                 </section>
             </div>
             <!-- .wrapper END -->

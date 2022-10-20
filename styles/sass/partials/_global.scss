@@ -16,6 +16,7 @@ html {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 // LIST STYLE REMOVER
@@ -31,26 +32,6 @@ li {
     margin: 10px 0 10px 30px;
     li {
         list-style: disc;
-        // list-style-position: inside;
         padding-left: 5px;
     }
-}
-
-//BUTTON STYLES
-.bDark {
-    color: userV.$white;
-    background: userV.$darkSlateBlue;
-}
-
-.bDark:visited {
-    color: userV.$white;
-}
-
-.bLight {
-    color: userV.$textBlack;
-    background: userV.$waterBlue;
-}
-
-.bLight:visited {
-    color: userV.$textBlack;
 }
