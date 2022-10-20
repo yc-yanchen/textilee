@@ -1,0 +1,9 @@
+@use "./variables" as userV;
+
+.contactMain {
+    background-color: userV.$lightSkyBlue;
+}
+
+.contactFormContainer {
+    background-color: userV.$darkTurquoise;
+}

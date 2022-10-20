@@ -1,0 +1,18 @@
+//BUTTON THEME (DARK/LIGHT)
+.bDark {
+    color: userV.$white;
+    background: userV.$darkSlateBlue;
+}
+
+.bDark:visited {
+    color: userV.$white;
+}
+
+.bLight {
+    color: userV.$textBlack;
+    background: userV.$waterBlue;
+}
+
+.bLight:visited {
+    color: userV.$textBlack;
+}

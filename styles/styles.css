@@ -374,7 +374,6 @@ a {
   line-height: 28px;
   font-weight: 400;
   letter-spacing: 2px;
-  color: rgb(26, 49, 92);
 }
 
 .tPlaceholder::-moz-placeholder {
@@ -383,7 +382,6 @@ a {
   line-height: 28px;
   font-weight: 400;
   letter-spacing: 2px;
-  color: rgb(26, 49, 92);
 }
 
 .tPlaceholder:-ms-input-placeholder {
@@ -392,7 +390,6 @@ a {
   line-height: 28px;
   font-weight: 400;
   letter-spacing: 2px;
-  color: rgb(26, 49, 92);
 }
 
 .tPlaceholder::-ms-input-placeholder {
@@ -401,7 +398,6 @@ a {
   line-height: 28px;
   font-weight: 400;
   letter-spacing: 2px;
-  color: rgb(26, 49, 92);
 }
 
 .tPlaceholder,
@@ -411,7 +407,6 @@ a {
   line-height: 28px;
   font-weight: 400;
   letter-spacing: 2px;
-  color: rgb(26, 49, 92);
 }
 
 a {
@@ -536,7 +531,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
 }
 nav .navBar {
   display: -webkit-box;
@@ -556,6 +550,107 @@ footer {
   text-align: center;
   background-color: rgb(22, 21, 21);
   padding: 10px;
+}
+
+.commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+.commentForm input,
+.commentForm textarea {
+  background-color: inherit;
+  padding: 25px;
+  border: 1px solid rgb(12, 173, 192);
+}
+.commentForm input:focus,
+.commentForm textarea:focus {
+  outline: none;
+}
+.commentForm .userInformation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+}
+.commentForm .userInformation input {
+  width: 45%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.commentForm textarea {
+  resize: none;
+}
+.commentForm button {
+  padding: 9px 0;
+  border: none;
+}
+
+.fLight input,
+.fLight textarea {
+  background-color: inherit;
+}
+.fLight input:focus::-webkit-input-placeholder, .fLight textarea:focus::-webkit-input-placeholder {
+  color: rgb(26, 49, 92);
+  opacity: 0.9;
+}
+.fLight input:focus::-moz-placeholder, .fLight textarea:focus::-moz-placeholder {
+  color: rgb(26, 49, 92);
+  opacity: 0.9;
+}
+.fLight input:focus:-ms-input-placeholder, .fLight textarea:focus:-ms-input-placeholder {
+  color: rgb(26, 49, 92);
+  opacity: 0.9;
+}
+.fLight input:focus::-ms-input-placeholder, .fLight textarea:focus::-ms-input-placeholder {
+  color: rgb(26, 49, 92);
+  opacity: 0.9;
+}
+.fLight input:focus::placeholder,
+.fLight textarea:focus::placeholder {
+  color: rgb(26, 49, 92);
+  opacity: 0.9;
+}
+.fLight .tPlaceholder,
+.fLight .tPlaceholder:focus {
+  color: rgb(26, 49, 92);
+}
+
+.fDark input,
+.fDark textarea {
+  background-color: rgb(33, 64, 79);
+}
+.fDark input:focus::-webkit-input-placeholder, .fDark textarea:focus::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.fDark input:focus::-moz-placeholder, .fDark textarea:focus::-moz-placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.fDark input:focus:-ms-input-placeholder, .fDark textarea:focus:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.fDark input:focus::-ms-input-placeholder, .fDark textarea:focus::-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.fDark input:focus::placeholder,
+.fDark textarea:focus::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.fDark .tPlaceholder,
+.fDark .tPlaceholder:focus {
+  color: rgb(255, 255, 255);
 }
 
 .indexHeader {
@@ -778,64 +873,25 @@ footer {
   width: 80%;
 }
 
-.commentForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 25px;
+.contactHeader {
+  background: url(../textileeAssets/contactHeader.jpg) no-repeat;
+  padding: 30px 0 0 0;
+  height: 576px;
 }
-.commentForm input,
-.commentForm textarea {
-  background-color: inherit;
-  padding: 25px;
-  border: 1px solid rgb(12, 173, 192);
+.contactHeader h2 {
+  margin: 70px 0;
+  width: 575px;
 }
-.commentForm input:focus,
-.commentForm textarea:focus {
-  outline: none;
+.contactHeader .imgContainer {
+  position: absolute;
+  left: 0%;
+  max-width: 70%;
 }
-.commentForm input:focus::-webkit-input-placeholder, .commentForm textarea:focus::-webkit-input-placeholder {
-  color: rgb(26, 49, 92);
-  opacity: 0.9;
+
+.contactMain {
+  background-color: rgb(204, 237, 251);
 }
-.commentForm input:focus::-moz-placeholder, .commentForm textarea:focus::-moz-placeholder {
-  color: rgb(26, 49, 92);
-  opacity: 0.9;
-}
-.commentForm input:focus:-ms-input-placeholder, .commentForm textarea:focus:-ms-input-placeholder {
-  color: rgb(26, 49, 92);
-  opacity: 0.9;
-}
-.commentForm input:focus::-ms-input-placeholder, .commentForm textarea:focus::-ms-input-placeholder {
-  color: rgb(26, 49, 92);
-  opacity: 0.9;
-}
-.commentForm input:focus::placeholder,
-.commentForm textarea:focus::placeholder {
-  color: rgb(26, 49, 92);
-  opacity: 0.9;
-}
-.commentForm .userInformation {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10%;
-}
-.commentForm .userInformation input {
-  width: 45%;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-}
-.commentForm textarea {
-  resize: none;
-}
-.commentForm button {
-  padding: 9px 0;
-  border: none;
+
+.contactFormContainer {
+  background-color: rgb(33, 64, 79);
 }

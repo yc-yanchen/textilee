@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/96594e967a.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Textilee - Contact</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="contactHeader">
+            <div class="wrapper">
+                <!-- NAVIGATION -->
+                <nav>
+                    <a href="#" class="tLogo">
+                        <h1>Textilee</h1>
+                    </a>
+                    <ul class="navBar">
+                        <li><a href="./index.html" class="tNav">Home</a></li>
+                        <li><a href="#" class="tNav">About</a></li>
+                        <li><a href="./blog.html" class="tNav">Blog</a></li>
+                        <li>
+                            <a href="./contact.html" class="tNav">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- SLOGAN -->
+                <h2 class="tLargerHeading">Get in touch</h2>
+            </div>
+            <!-- .wrapper END -->
+        </header>
+        <!-- MAIN -->
+        <main class="contactMain">
+            <!-- SECTION: FORM -->
+            <div class="contactFormContainer">
+                <form action="#" class="commentForm fDark">
+                    <div class="userInformation">
+                        <input
+                            type="text"
+                            name="userName"
+                            id="userName"
+                            placeholder="Name"
+                            class="tPlaceholder"
+                            aria-label="username"
+                        />
+                        <input
+                            type="email"
+                            name="userEmail"
+                            id="userEmail"
+                            placeholder="Email address"
+                            class="tPlaceholder"
+                            aria-label="email"
+                        />
+                    </div>
+                    <!-- .userInformation END -->
+                    <textarea
+                        name="userComments"
+                        id="userComments"
+                        cols="30"
+                        rows="6"
+                        placeholder="Comment"
+                        class="tPlaceholder"
+                    ></textarea>
+                    <button type="submit" class="tButton bDark">
+                        post comment
+                    </button>
+                </form>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <div class="wrapper">
+                <h5 class="tCopyright">Copyright (C) 2019 Juno College</h5>
+            </div>
+            <!-- .WRAPPER END -->
+        </footer>
+    </body>
+</html>

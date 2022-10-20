@@ -5,7 +5,6 @@ html {
     font-size: 62.5%;
     max-width: 1600px;
     margin: 0 auto;
-    // background-color: userV.$lightSkyBlue;
 }
 
 //WRAPPER STYLES
@@ -52,23 +51,4 @@ li {
 
 .imgLargerShadowL {
     box-shadow: -27px 28px 0 -9px userV.$turquoiseBlue;
-}
-
-//BUTTON STYLES
-.bDark {
-    color: userV.$white;
-    background: userV.$darkSlateBlue;
-}
-
-.bDark:visited {
-    color: userV.$white;
-}
-
-.bLight {
-    color: userV.$textBlack;
-    background: userV.$waterBlue;
-}
-
-.bLight:visited {
-    color: userV.$textBlack;
 }
