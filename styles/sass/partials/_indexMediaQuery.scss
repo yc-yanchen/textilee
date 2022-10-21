@@ -1,0 +1,61 @@
+@use "./variables" as userV;
+
+@media (max-width: 1350px) {
+    .discovery {
+        position: static;
+        .itemContainerFlex {
+            align-items: center;
+            gap: 5%;
+        }
+        .itemContainer {
+            width: 47.5%;
+        }
+        .imgContainer {
+            position: static;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .moreInformation {
+        .itemContainerFlex {
+            flex-flow: column;
+            .itemContainer {
+                width: 100%;
+            }
+        }
+    }
+    .discovery {
+        .itemContainerFlex {
+            padding: 75px 0;
+            flex-flow: column;
+
+            .itemContainer:nth-child(1) {
+                order: 1;
+            }
+            .itemContainer:nth-child(2) {
+                order: 2;
+            }
+            .itemContainer:nth-child(3) {
+                order: 4;
+            }
+            .itemContainer:nth-child(4) {
+                order: 3;
+            }
+
+            .itemContainer {
+                width: 100%;
+                padding: 20px 0;
+
+                .indexTextContainer {
+                    text-align: center;
+                    padding: 5% 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 705px) {
+}

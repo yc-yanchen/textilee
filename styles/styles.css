@@ -674,9 +674,9 @@ footer {
   width: 575px;
 }
 .indexHeader .imgContainer {
-  position: absolute;
+  position: relative;
   left: 0%;
-  max-width: 70%;
+  max-width: 90%;
 }
 
 .learnNewTechniques {
@@ -903,6 +903,19 @@ footer {
   position: relative;
 }
 
+.contactContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .contactFormContainer {
   background-color: rgb(33, 64, 79);
   width: 62.5%;
@@ -915,9 +928,10 @@ footer {
 }
 
 .textileeInformation {
-  position: absolute;
-  right: 7.5%;
-  top: 100px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  right: -3.5%;
   display: inline-block;
 }
 .textileeInformation .socialMediaFlex {
@@ -942,4 +956,69 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1350px) {
+  .discovery {
+    position: static;
+  }
+  .discovery .itemContainerFlex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5%;
+  }
+  .discovery .itemContainer {
+    width: 47.5%;
+  }
+  .discovery .imgContainer {
+    position: static;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1150px) {
+  .moreInformation .itemContainerFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .moreInformation .itemContainerFlex .itemContainer {
+    width: 100%;
+  }
+  .discovery .itemContainerFlex {
+    padding: 75px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .discovery .itemContainerFlex .itemContainer:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .discovery .itemContainerFlex .itemContainer:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .discovery .itemContainerFlex .itemContainer:nth-child(3) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .discovery .itemContainerFlex .itemContainer:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .discovery .itemContainerFlex .itemContainer {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .discovery .itemContainerFlex .itemContainer .indexTextContainer {
+    text-align: center;
+    padding: 5% 0;
+  }
 }
