@@ -1,0 +1,11 @@
+@use "./variables" as userV;
+
+@media (max-width: 800px) {
+    nav {
+        flex-flow: column;
+        justify-content: center;
+        .navBar {
+            margin: 30px;
+        }
+    }
+}
