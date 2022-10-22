@@ -19,23 +19,42 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header class="contactHeader">
+        <header class="contactHeader headerNavStyle">
             <div class="wrapper">
                 <!-- NAVIGATION -->
                 <nav>
                     <a href="#" class="tLogo">
                         <h1>Textilee</h1>
                     </a>
-                    <ul class="navBar">
-                        <li><a href="./index.html" class="tNav">Home</a></li>
-                        <li><a href="#" class="tNav">About</a></li>
-                        <li><a href="./blog.html" class="tNav">Blog</a></li>
-                        <li>
-                            <a href="./contact.html" class="tNav">Contact</a>
-                        </li>
-                    </ul>
+                    <div class="cover"></div>
+                    <div class="drawer">
+                        <input
+                            type="checkbox"
+                            id="hamburgerMenu"
+                            class="sr-only"
+                        />
+                        <label for="hamburgerMenu" id="toggle"
+                            ><div class="hamburgerMenuStack">
+                                <div class="top menuStick"></div>
+                                <div class="mid menuStick"></div>
+                                <div class="bot menuStick"></div></div
+                        ></label>
+
+                        <ul class="navBar">
+                            <li>
+                                <a href="./index.html" class="tNav">Home</a>
+                            </li>
+                            <li><a href="#" class="tNav">About</a></li>
+                            <li><a href="./blog.html" class="tNav">Blog</a></li>
+                            <li>
+                                <a href="./contact.html" class="tNav"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .drawer END -->
                 </nav>
-                <!-- SLOGAN -->
                 <h2 class="tLargerHeading">Get in touch</h2>
             </div>
             <!-- .wrapper END -->
@@ -44,77 +63,79 @@
         <main class="contactMain">
             <!-- SECTION: FORM -->
             <div class="wrapper">
-                <div class="contactFormContainer imgLargerShadowR">
-                    <form action="#" class="commentForm fDark">
-                        <div class="userInformation">
-                            <input
-                                type="text"
-                                name="userName"
-                                id="userName"
-                                placeholder="Name"
+                <div class="contactContent">
+                    <div class="contactFormContainer imgLargerShadowR">
+                        <form action="#" class="commentForm fDark">
+                            <div class="userInformation">
+                                <input
+                                    type="text"
+                                    name="userName"
+                                    id="userName"
+                                    placeholder="Name"
+                                    class="tPlaceholder"
+                                    aria-label="username"
+                                />
+                                <input
+                                    type="email"
+                                    name="userEmail"
+                                    id="userEmail"
+                                    placeholder="Email address"
+                                    class="tPlaceholder"
+                                    aria-label="email"
+                                />
+                            </div>
+                            <!-- .userInformation END -->
+                            <textarea
+                                name="userComments"
+                                id="userComments"
+                                cols="30"
+                                rows="6"
+                                placeholder="Comment"
                                 class="tPlaceholder"
-                                aria-label="username"
-                            />
-                            <input
-                                type="email"
-                                name="userEmail"
-                                id="userEmail"
-                                placeholder="Email address"
-                                class="tPlaceholder"
-                                aria-label="email"
-                            />
-                        </div>
-                        <!-- .userInformation END -->
-                        <textarea
-                            name="userComments"
-                            id="userComments"
-                            cols="30"
-                            rows="6"
-                            placeholder="Comment"
-                            class="tPlaceholder"
-                        ></textarea>
-                        <button type="submit" class="tButton bLight">
-                            post comment
-                        </button>
-                    </form>
-                </div>
-                <!-- .contactFormContainer END -->
-                <section class="textileeInformation">
-                    <div class="contactInformation">
-                        <ul class="socialMediaFlex cDarkSlateBlue">
-                            <li class="socialMedia">
-                                <a href="https://www.facebook.com/"
-                                    ><i class="fa-brands fa-facebook-f"></i
-                                ></a>
-                            </li>
-                            <li class="contactIconContainer">
-                                <a href="https://www.instagram.com/"
-                                    ><i class="fa-brands fa-instagram"></i
-                                ></a>
-                            </li>
-                            <li class="contactIconContainer">
-                                <a href="https://twitter.com/"
-                                    ><i class="fa-brands fa-twitter"></i
-                                ></a>
-                            </li>
-                            <li class="contactIconContainer">
-                                <a href="https://www.whatsapp.com/"
-                                    ><i class="fa-brands fa-whatsapp"></i
-                                ></a>
-                            </li>
-                        </ul>
-
-                        <p class="tContact cBlack">info@email.com</p>
+                            ></textarea>
+                            <button type="submit" class="tButton bLight">
+                                post comment
+                            </button>
+                        </form>
                     </div>
-                    <!-- .contactInformation END -->
-                    <ul class="address tContact cBlack">
-                        <li>123 - 456 - 7890</li>
-                        <li>123 Queen Street West,</li>
-                        <li>Unit 10</li>
-                        <li>Toronto, Ontario</li>
-                        <li>M5V2D5</li>
-                    </ul>
-                </section>
+                    <!-- .contactFormContainer END -->
+                    <section class="textileeInformation">
+                        <div class="contactInformation">
+                            <ul class="socialMediaFlex cDarkSlateBlue">
+                                <li class="socialMedia">
+                                    <a href="https://www.facebook.com/"
+                                        ><i class="fa-brands fa-facebook-f"></i
+                                    ></a>
+                                </li>
+                                <li class="contactIconContainer">
+                                    <a href="https://www.instagram.com/"
+                                        ><i class="fa-brands fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li class="contactIconContainer">
+                                    <a href="https://twitter.com/"
+                                        ><i class="fa-brands fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li class="contactIconContainer">
+                                    <a href="https://www.whatsapp.com/"
+                                        ><i class="fa-brands fa-whatsapp"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                            <p class="tContact cBlack">info@email.com</p>
+                        </div>
+                        <!-- .contactInformation END -->
+                        <ul class="address tContact cBlack">
+                            <li>123 - 456 - 7890</li>
+                            <li>123 Queen Street West,</li>
+                            <li>Unit 10</li>
+                            <li>Toronto, Ontario</li>
+                            <li>M5V2D5</li>
+                        </ul>
+                    </section>
+                </div>
+                <!-- .contactContent END -->
             </div>
             <!-- .wrapper END -->
         </main>

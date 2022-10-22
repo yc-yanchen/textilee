@@ -14,6 +14,15 @@ html {
     margin: 0 auto;
 }
 
+@media (max-width: 1150px) {
+    .tabletWrapper {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+// IMG STYLE
+
 img {
     max-width: 100%;
     display: block;

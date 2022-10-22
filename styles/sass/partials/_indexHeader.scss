@@ -12,8 +12,11 @@
         width: 575px;
     }
     .imgContainer {
-        position: absolute;
+        position: relative;
         left: 0%;
-        max-width: 70%;
+        width: 100%;
+        img {
+            width: fit-content;
+        }
     }
 }

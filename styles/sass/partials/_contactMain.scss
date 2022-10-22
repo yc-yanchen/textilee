@@ -5,6 +5,14 @@
     position: relative;
 }
 
+.contactContent {
+    display: flex;
+    align-items: center;
+    // gap: %;
+    position: relative;
+    justify-content: space-between;
+}
+
 .contactFormContainer {
     background-color: userV.$darkTurquoise;
     width: 62.5%;
@@ -16,9 +24,10 @@
 }
 
 .textileeInformation {
-    position: absolute;
-    right: 7.5%;
-    top: 100px;
+    flex-shrink: 0;
+    position: relative;
+    right: -3.5%;
+    // top: 100px;
     display: inline-block;
     .socialMediaFlex {
         display: flex;
