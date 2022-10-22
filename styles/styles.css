@@ -475,6 +475,12 @@ html {
   margin: 0 auto;
 }
 
+@media (max-width: 1150px) {
+  .tabletWrapper {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
 img {
   max-width: 100%;
   display: block;
@@ -684,6 +690,11 @@ footer {
   left: 0%;
   width: 100%;
 }
+.indexHeader .imgContainer img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
 .learnNewTechniques {
   background-color: rgb(204, 237, 251);
@@ -826,11 +837,6 @@ footer {
 .blogHeader h2 {
   margin: 125px 0;
   width: 575px;
-}
-.blogHeader .imgContainer {
-  position: absolute;
-  left: 0%;
-  max-width: 70%;
 }
 
 .blogMain {
@@ -995,6 +1001,7 @@ footer {
   }
   .indexHeader h2 {
     width: 100%;
+    text-align: center;
   }
   .indexHeader .imgContainer {
     display: none;
@@ -1157,5 +1164,56 @@ main .searchByStyle {
   }
   #hamburgerMenu:checked ~ .navBar {
     top: 70px;
+  }
+}
+@media (max-width: 1150px) {
+  .blogHeader {
+    height: auto;
+    padding: 30px 0;
+  }
+  .ourNewCollection {
+    padding: 100px 0 50px 0;
+    width: 100%;
+    border: none;
+  }
+  .ourNewCollection .imgContainer {
+    position: static;
+    margin: 0 auto;
+  }
+  .ourNewCollection .imgContainer img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .ourNewCollection .blogTextContainer {
+    width: 100%;
+    margin: 75px 0 0 0;
+  }
+  .ourMission {
+    width: 100%;
+    position: static;
+    padding: 50px 0 100px 0;
+  }
+  .ourMission .mobileContainerFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ourMission .imgContainer {
+    top: 0;
+    width: 47.5%;
+  }
+  .ourMission .blogTextContainer {
+    width: 47.5%;
+  }
+  .comments {
+    width: 100%;
   }
 }

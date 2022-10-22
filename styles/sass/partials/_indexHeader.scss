@@ -15,5 +15,8 @@
         position: relative;
         left: 0%;
         width: 100%;
+        img {
+            width: fit-content;
+        }
     }
 }
