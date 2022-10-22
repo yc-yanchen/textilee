@@ -19,23 +19,42 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header class="contactHeader">
+        <header class="contactHeader headerNavStyle">
             <div class="wrapper">
                 <!-- NAVIGATION -->
                 <nav>
                     <a href="#" class="tLogo">
                         <h1>Textilee</h1>
                     </a>
-                    <ul class="navBar">
-                        <li><a href="./index.html" class="tNav">Home</a></li>
-                        <li><a href="#" class="tNav">About</a></li>
-                        <li><a href="./blog.html" class="tNav">Blog</a></li>
-                        <li>
-                            <a href="./contact.html" class="tNav">Contact</a>
-                        </li>
-                    </ul>
+                    <div class="cover"></div>
+                    <div class="drawer">
+                        <input
+                            type="checkbox"
+                            id="hamburgerMenu"
+                            class="sr-only"
+                        />
+                        <label for="hamburgerMenu" id="toggle"
+                            ><div class="hamburgerMenuStack">
+                                <div class="top menuStick"></div>
+                                <div class="mid menuStick"></div>
+                                <div class="bot menuStick"></div></div
+                        ></label>
+
+                        <ul class="navBar">
+                            <li>
+                                <a href="./index.html" class="tNav">Home</a>
+                            </li>
+                            <li><a href="#" class="tNav">About</a></li>
+                            <li><a href="./blog.html" class="tNav">Blog</a></li>
+                            <li>
+                                <a href="./contact.html" class="tNav"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .drawer END -->
                 </nav>
-                <!-- SLOGAN -->
                 <h2 class="tLargerHeading">Get in touch</h2>
             </div>
             <!-- .wrapper END -->

@@ -1,11 +1,57 @@
 @use "./variables" as userV;
 
 @media (max-width: 800px) {
-    nav {
-        flex-flow: column;
-        justify-content: center;
-        .navBar {
-            margin: 30px;
+    .headerNavStyle {
+        height: 75px;
+        position: relative;
+
+        .hamburgerMenuStack {
+            right: -95%;
+            top: -35px;
+            cursor: pointer;
+            z-index: 100;
+            position: relative;
+            height: 25px;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .menuStick {
+                height: 3px;
+                width: 30px;
+                background-color: userV.$textBlack;
+            }
         }
+
+        nav {
+            display: block;
+
+            .cover {
+                width: 100vw;
+                height: 75px;
+                background-color: userV.$white;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 10;
+            }
+            .navBar {
+                display: flex;
+                flex-flow: column;
+                align-items: flex-start;
+                position: absolute;
+                top: -400px;
+                left: 0%;
+                width: 100vw;
+                background-color: userV.$white;
+                z-index: 1;
+                margin: 0;
+                padding: 30px 12%;
+                transition: top 0.5s ease-in-out;
+            }
+        }
+    }
+    #hamburgerMenu:checked ~ .navBar {
+        top: 70px;
     }
 }

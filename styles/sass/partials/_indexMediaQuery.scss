@@ -106,11 +106,23 @@
             flex-flow: column;
             gap: 75px;
             align-items: center;
-            // justify-content: space-between;
-            // .imgContainer {
-            //     display: flex;
-            //     justify-content: center;
-            // }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    main {
+        .learnNewTechniques {
+            .itemContainerFlex {
+                padding: 0 0 0 0;
+            }
+        }
+        .learnNewTechniques,
+        .gallery,
+        .moreInformation,
+        .discovery,
+        .searchByStyle {
+            padding: 50px 0 50px 0;
         }
     }
 }

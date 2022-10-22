@@ -347,6 +347,8 @@ a {
   line-height: 24px;
   letter-spacing: 1.7px;
   font-weight: 400;
+  z-index: 100;
+  position: relative;
 }
 
 .tLogo:visited {
@@ -511,6 +513,10 @@ li {
 .imgLargerShadowL {
   -webkit-box-shadow: -27px 28px 0 -9px rgb(12, 173, 192);
           box-shadow: -27px 28px 0 -9px rgb(12, 173, 192);
+}
+
+h1 {
+  display: inline-block;
 }
 
 nav {
@@ -1075,17 +1081,81 @@ footer {
             align-items: center;
   }
 }
+@media (max-width: 550px) {
+  main .learnNewTechniques .itemContainerFlex {
+    padding: 0 0 0 0;
+  }
+  main .learnNewTechniques,
+main .gallery,
+main .moreInformation,
+main .discovery,
+main .searchByStyle {
+    padding: 50px 0 50px 0;
+  }
+}
 @media (max-width: 800px) {
-  nav {
+  .headerNavStyle {
+    height: 75px;
+    position: relative;
+  }
+  .headerNavStyle .hamburgerMenuStack {
+    right: -95%;
+    top: -35px;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    height: 25px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .headerNavStyle .hamburgerMenuStack .menuStick {
+    height: 3px;
+    width: 30px;
+    background-color: rgb(22, 21, 21);
+  }
+  .headerNavStyle nav {
+    display: block;
+  }
+  .headerNavStyle nav .cover {
+    width: 100vw;
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+  .headerNavStyle nav .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: absolute;
+    top: -400px;
+    left: 0%;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    margin: 0;
+    padding: 30px 12%;
+    -webkit-transition: top 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out;
   }
-  nav .navBar {
-    margin: 30px;
+  #hamburgerMenu:checked ~ .navBar {
+    top: 70px;
   }
 }

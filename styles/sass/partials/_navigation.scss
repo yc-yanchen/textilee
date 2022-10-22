@@ -1,5 +1,9 @@
 @use "./variables" as userV;
 
+h1 {
+    display: inline-block;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
