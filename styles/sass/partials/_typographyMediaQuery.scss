@@ -1,6 +1,45 @@
 @use "./variables" as userV;
 
-// .tSlogan {
-//     font-size: 2.8rem;
-//     text-align: center;
-// }
+// TYPOGRAPHY MEDIA QUERY 800px
+@media (max-width: 800px) {
+    .tLargerHeading {
+        font-size: 4rem;
+        margin: 0 0 0 0;
+        padding: 0 0 10px 0;
+    }
+
+    .tMobilePageHeading {
+        font-family: "Pacifico", cursive;
+        font-size: 4rem;
+        letter-spacing: 4.3px;
+        font-weight: 400;
+        display: block;
+        margin: 50px 0;
+    }
+}
+
+// TYPOGRAPHY MEDIA QUERY 500px
+@media (max-width: 500px) {
+    .tHeading {
+        font-size: 3.8rem;
+        line-height: 50px;
+    }
+    .tBody {
+        font-size: 1.8rem;
+    }
+    .tButton {
+        font-size: 2.4rem;
+    }
+    .tSmallerHeading {
+        font-size: 3.5rem;
+        line-height: 45px;
+    }
+    .tCopyright {
+        font-size: 1.8rem;
+    }
+    .tContact {
+        font-size: 1.8rem;
+        line-height: 30px;
+        text-align: center;
+    }
+}

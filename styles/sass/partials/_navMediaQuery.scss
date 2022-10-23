@@ -27,27 +27,28 @@
             display: block;
 
             .cover {
-                width: 100vw;
+                width: 100%;
                 height: 75px;
                 background-color: userV.$white;
                 position: absolute;
                 left: 0;
                 top: 0;
                 z-index: 10;
+                // border-bottom: 1px solid userV.$textBlack;
             }
             .navBar {
                 display: flex;
                 flex-flow: column;
                 align-items: flex-start;
                 position: absolute;
-                top: -400px;
+                top: -250px;
                 left: 0%;
-                width: 100vw;
+                width: 100%;
                 background-color: userV.$white;
                 z-index: 1;
                 margin: 0;
                 padding: 30px 12%;
-                transition: top 0.5s ease-in-out;
+                transition: top 1s ease;
             }
         }
     }

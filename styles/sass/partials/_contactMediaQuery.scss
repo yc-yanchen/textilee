@@ -1,0 +1,57 @@
+@use "./variables" as userV;
+
+// CONTACT MEDIA QUERY 1150px
+@media (max-width: 1150px) {
+    // SECTION: CONTACT MAIN STYLING
+    .contactMain {
+        background-color: userV.$darkTurquoise;
+        padding: 1px 0;
+    }
+
+    // SECTION: CONTACT HEADER STYLING
+    .contactHeader {
+        padding: 30px 0 1px 0;
+        height: auto;
+
+        h2 {
+            width: 100%;
+        }
+    }
+
+    // SECTION: CONTACT CONTENT STYLING
+    .contactContent {
+        flex-direction: column;
+        margin: -10px 0;
+    }
+
+    // SECTION: CONTACT FORM CONTAINER STYLING
+    .contactFormContainer {
+        margin: 25px 0;
+        padding: 0;
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    // SECTION: CONTACT AND ADDRESS INFORMATION STYLING
+    .textileeInformation {
+        width: 100vw;
+        position: static;
+        display: flex;
+        padding: 50px 50px 0 50px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: userV.$lightSkyBlue;
+    }
+}
+
+// CONTACT MEDIA QUERY 800px
+@media (max-width: 800px) {
+    // SECTION: CONTACT HEADER STYLNG
+    .contactHeader {
+        .desktopPageHeading {
+            display: none;
+        }
+    }
+}
