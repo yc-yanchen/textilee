@@ -1,7 +1,9 @@
 @use "./variables" as userV;
 
+// INDEX MEDIA QUERY 1350px
 @media (max-width: 1350px) {
-    .discovery {
+    // SECTION: DISCOVER STYLING
+    .discover {
         position: static;
         .itemContainerFlex {
             align-items: center;
@@ -17,7 +19,9 @@
     }
 }
 
+// INDEX MEDIA QUERY 1150px
 @media (max-width: 1150px) {
+    // GENERAL STYLING
     .gallery,
     .moreInformation,
     .discovery,
@@ -25,13 +29,13 @@
         padding: 100px 0 100px 0;
     }
 
+    // INDEX HEADER STYLING
     .indexHeader {
-        height: auto;
         padding: 30px 0 1px 0;
+        height: auto;
 
         h2 {
             width: 100%;
-            text-align: center;
         }
 
         .imgContainer {
@@ -39,6 +43,7 @@
         }
     }
 
+    // SECTION: LEARN NEW TECHNIQUES STYLING
     .learnNewTechniques {
         .itemContainerFlex {
             flex-flow: column;
@@ -57,6 +62,7 @@
         }
     }
 
+    // SECTION: MORE INFORMATION STYLING
     .moreInformation {
         .itemContainerFlex {
             flex-flow: column;
@@ -65,7 +71,9 @@
             }
         }
     }
-    .discovery {
+
+    // SECTION: DISCOVER STYLING
+    .discover {
         .itemContainerFlex {
             flex-flow: column;
 
@@ -90,18 +98,25 @@
                 .indexTextContainer {
                     text-align: center;
                     padding: 5% 0;
+                    h4 {
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }
     }
 }
 
+// INDEX MEDIA QUERY 800px
 @media (max-width: 800px) {
+    // INDEX HEADER STYLING
     .indexHeader {
         h2 {
             display: none;
         }
     }
+
+    // SECTION: GALLERY STYLING
     .gallery {
         .galleryFlex {
             flex-flow: column;
@@ -111,19 +126,31 @@
     }
 }
 
+// INDEX MEDIA QUERY 550px
 @media (max-width: 550px) {
+    // MAIN SECTION STYLING
     main {
+        // SECTION: LEARN NEW TECHNIQUES STYLING
         .learnNewTechniques {
             .itemContainerFlex {
                 padding: 0 0 0 0;
             }
         }
+        // GENERAL STYLING
         .learnNewTechniques,
         .gallery,
         .moreInformation,
         .discovery,
         .searchByStyle {
             padding: 50px 0 50px 0;
+        }
+    }
+    // ICON AND ICON CONTAINER STYLING
+    .iconContainer {
+        width: 40px;
+        height: 40px;
+        i {
+            font-size: 2rem;
         }
     }
 }

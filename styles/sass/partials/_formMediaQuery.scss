@@ -1,0 +1,17 @@
+@use "./variables" as userV;
+
+@media (max-width: 800px) {
+    .commentForm {
+        gap: 75px;
+        .userInformation {
+            flex-flow: column;
+            input {
+                width: 100%;
+            }
+        }
+        input,
+        textarea {
+            padding: 15px;
+        }
+    }
+}

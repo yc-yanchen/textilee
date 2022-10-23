@@ -445,6 +445,7 @@ a:visited {
   color: rgb(255, 255, 255);
   font-weight: 400;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .cBlack {
@@ -461,6 +462,15 @@ a:visited {
 
 .cWhite {
   color: rgb(255, 255, 255);
+}
+
+.removeLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tMobilePageHeading {
+  display: none;
 }
 
 html {
@@ -768,17 +778,18 @@ footer {
   border-radius: 50%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  margin-top: 5px;
 }
 .iconContainer i {
   color: rgb(255, 255, 255);
   font-size: 2.75rem;
 }
 
-.discovery {
+.discover {
   background-color: rgb(33, 64, 79);
   position: relative;
 }
-.discovery .itemContainerFlex {
+.discover .itemContainerFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -788,30 +799,30 @@ footer {
           flex-flow: row wrap;
   gap: 15%;
 }
-.discovery .itemContainer {
+.discover .itemContainer {
   width: 42.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.discovery .imgContainer {
+.discover .imgContainer {
   position: absolute;
 }
-.discovery .imgContainerL {
+.discover .imgContainerL {
   left: 0%;
   top: -5%;
 }
-.discovery .imgContainerR {
+.discover .imgContainerR {
   right: 0%;
   bottom: -5%;
 }
-.discovery .indexTextContainer {
+.discover .indexTextContainer {
   padding: 12.5% 2%;
 }
-.discovery .itemContainer:nth-child(2) .indexTextContainer {
+.discover .itemContainer:nth-child(2) .indexTextContainer {
   text-align: left;
 }
-.discovery .itemContainer:nth-child(3) .indexTextContainer {
+.discover .itemContainer:nth-child(3) .indexTextContainer {
   text-align: right;
 }
 
@@ -833,8 +844,10 @@ footer {
   background: url(../textileeAssets/blogHeader.jpg) no-repeat;
   padding: 30px 0 0 0;
   height: 568px;
+  position: relative;
 }
-.blogHeader h2 {
+
+.desktopPageHeading {
   margin: 125px 0;
   width: 575px;
 }
@@ -904,11 +917,6 @@ footer {
   margin: 125px 0;
   width: 575px;
 }
-.contactHeader .imgContainer {
-  position: absolute;
-  left: 0%;
-  max-width: 70%;
-}
 
 .contactMain {
   background-color: rgb(204, 237, 251);
@@ -970,20 +978,86 @@ footer {
           flex-direction: column;
 }
 
+@media (max-width: 800px) {
+  .headerNavStyle {
+    height: 75px;
+    position: relative;
+  }
+  .headerNavStyle .hamburgerMenuStack {
+    right: -95%;
+    top: -35px;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    height: 25px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .headerNavStyle .hamburgerMenuStack .menuStick {
+    height: 3px;
+    width: 30px;
+    background-color: rgb(22, 21, 21);
+  }
+  .headerNavStyle nav {
+    display: block;
+  }
+  .headerNavStyle nav .cover {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+  .headerNavStyle nav .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: absolute;
+    top: -250px;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    margin: 0;
+    padding: 30px 12%;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
+  }
+  #hamburgerMenu:checked ~ .navBar {
+    top: 70px;
+  }
+}
 @media (max-width: 1350px) {
-  .discovery {
+  .discover {
     position: static;
   }
-  .discovery .itemContainerFlex {
+  .discover .itemContainerFlex {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     gap: 5%;
   }
-  .discovery .itemContainer {
+  .discover .itemContainer {
     width: 47.5%;
   }
-  .discovery .imgContainer {
+  .discover .imgContainer {
     position: static;
     margin: 0 auto;
   }
@@ -996,12 +1070,11 @@ footer {
     padding: 100px 0 100px 0;
   }
   .indexHeader {
-    height: auto;
     padding: 30px 0 1px 0;
+    height: auto;
   }
   .indexHeader h2 {
     width: 100%;
-    text-align: center;
   }
   .indexHeader .imgContainer {
     display: none;
@@ -1037,40 +1110,43 @@ footer {
   .moreInformation .itemContainerFlex .itemContainer {
     width: 100%;
   }
-  .discovery .itemContainerFlex {
+  .discover .itemContainerFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  .discovery .itemContainerFlex .itemContainer:nth-child(1) {
+  .discover .itemContainerFlex .itemContainer:nth-child(1) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .discovery .itemContainerFlex .itemContainer:nth-child(2) {
+  .discover .itemContainerFlex .itemContainer:nth-child(2) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .discovery .itemContainerFlex .itemContainer:nth-child(3) {
+  .discover .itemContainerFlex .itemContainer:nth-child(3) {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
   }
-  .discovery .itemContainerFlex .itemContainer:nth-child(4) {
+  .discover .itemContainerFlex .itemContainer:nth-child(4) {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
     padding: 75px 0 0 0;
   }
-  .discovery .itemContainerFlex .itemContainer {
+  .discover .itemContainerFlex .itemContainer {
     width: 100%;
     padding: 20px 0;
   }
-  .discovery .itemContainerFlex .itemContainer .indexTextContainer {
+  .discover .itemContainerFlex .itemContainer .indexTextContainer {
     text-align: center;
     padding: 5% 0;
+  }
+  .discover .itemContainerFlex .itemContainer .indexTextContainer h4 {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 800px) {
@@ -1099,82 +1175,31 @@ main .discovery,
 main .searchByStyle {
     padding: 50px 0 50px 0;
   }
-}
-@media (max-width: 800px) {
-  .headerNavStyle {
-    height: 75px;
-    position: relative;
+  .iconContainer {
+    width: 40px;
+    height: 40px;
   }
-  .headerNavStyle .hamburgerMenuStack {
-    right: -95%;
-    top: -35px;
-    cursor: pointer;
-    z-index: 100;
-    position: relative;
-    height: 25px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .headerNavStyle .hamburgerMenuStack .menuStick {
-    height: 3px;
-    width: 30px;
-    background-color: rgb(22, 21, 21);
-  }
-  .headerNavStyle nav {
-    display: block;
-  }
-  .headerNavStyle nav .cover {
-    width: 100vw;
-    height: 75px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 10;
-  }
-  .headerNavStyle nav .navBar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    position: absolute;
-    top: -400px;
-    left: 0%;
-    width: 100vw;
-    background-color: rgb(255, 255, 255);
-    z-index: 1;
-    margin: 0;
-    padding: 30px 12%;
-    -webkit-transition: top 0.5s ease-in-out;
-    transition: top 0.5s ease-in-out;
-  }
-  #hamburgerMenu:checked ~ .navBar {
-    top: 70px;
+  .iconContainer i {
+    font-size: 2rem;
   }
 }
 @media (max-width: 1150px) {
+  .blogMain {
+    background-color: rgb(33, 64, 79);
+    padding: 1px 0;
+  }
   .blogHeader {
+    padding: 30px 0 1px 0;
     height: auto;
-    padding: 30px 0;
+  }
+  .blogHeader .desktopPageHeading {
+    width: 100%;
   }
   .ourNewCollection {
-    padding: 100px 0 50px 0;
+    padding: 0 0 25px 0;
     width: 100%;
     border: none;
+    margin: 0 0 0 0;
   }
   .ourNewCollection .imgContainer {
     position: static;
@@ -1188,12 +1213,12 @@ main .searchByStyle {
   }
   .ourNewCollection .blogTextContainer {
     width: 100%;
-    margin: 75px 0 0 0;
+    margin: 50px 0 0 0;
   }
   .ourMission {
     width: 100%;
     position: static;
-    padding: 50px 0 100px 0;
+    padding: 25px 0 100px 0;
   }
   .ourMission .mobileContainerFlex {
     display: -webkit-box;
@@ -1214,6 +1239,141 @@ main .searchByStyle {
     width: 47.5%;
   }
   .comments {
+    width: 100vw;
+    background-color: rgb(204, 237, 251);
+  }
+}
+@media (max-width: 800px) {
+  .blogHeader h2 {
+    display: none;
+  }
+  .mobilePageHeader {
+    display: block;
+  }
+  .ourMission {
+    padding: 0 0 50px 0;
+  }
+  .ourMission .mobileContainerFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .ourMission .imgContainer {
     width: 100%;
+  }
+  .ourMission .blogTextContainer {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .comments {
+    width: 100%;
+  }
+}
+@media (max-width: 1150px) {
+  .contactMain {
+    background-color: rgb(33, 64, 79);
+    padding: 1px 0;
+  }
+  .contactHeader {
+    padding: 30px 0 1px 0;
+    height: auto;
+  }
+  .contactHeader h2 {
+    width: 100%;
+  }
+  .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: -10px 0;
+  }
+  .contactFormContainer {
+    margin: 25px 0;
+    padding: 0;
+    position: static;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .textileeInformation {
+    width: 100vw;
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px 50px 0 50px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgb(204, 237, 251);
+  }
+}
+@media (max-width: 800px) {
+  .contactHeader .desktopPageHeading {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .commentForm {
+    gap: 75px;
+  }
+  .commentForm .userInformation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .commentForm .userInformation input {
+    width: 100%;
+  }
+  .commentForm input,
+.commentForm textarea {
+    padding: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .tLargerHeading {
+    font-size: 4rem;
+    margin: 0 0 0 0;
+    padding: 0 0 10px 0;
+  }
+  .tMobilePageHeading {
+    font-family: "Pacifico", cursive;
+    font-size: 4rem;
+    letter-spacing: 4.3px;
+    font-weight: 400;
+    display: block;
+    margin: 50px 0;
+  }
+}
+@media (max-width: 500px) {
+  .tHeading {
+    font-size: 3.8rem;
+    line-height: 50px;
+  }
+  .tBody {
+    font-size: 1.8rem;
+  }
+  .tButton {
+    font-size: 2.4rem;
+  }
+  .tSmallerHeading {
+    font-size: 3.5rem;
+    line-height: 45px;
+  }
+  .tCopyright {
+    font-size: 1.8rem;
+  }
+  .tContact {
+    font-size: 1.8rem;
+    line-height: 30px;
+    text-align: center;
   }
 }

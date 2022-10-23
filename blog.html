@@ -23,9 +23,10 @@
             <div class="wrapper">
                 <!-- NAVIGATION -->
                 <nav>
-                    <a href="#" class="tLogo">
+                    <a href="index.html" class="tLogo">
                         <h1>Textilee</h1>
                     </a>
+                    <!-- DROPDOWN MENU -->
                     <div class="cover"></div>
                     <div class="drawer">
                         <input
@@ -39,7 +40,7 @@
                                 <div class="mid menuStick"></div>
                                 <div class="bot menuStick"></div></div
                         ></label>
-
+                        <!-- DROPDOWN MENU END -->
                         <ul class="navBar">
                             <li>
                                 <a href="./index.html" class="tNav">Home</a>
@@ -55,13 +56,17 @@
                     </div>
                     <!-- .drawer END -->
                 </nav>
-                <h2 class="tLargerHeading">Blog</h2>
+                <!-- SLOGAN -->
+                <h2 class="tLargerHeading desktopPageHeading">Blog</h2>
             </div>
             <!-- .wrapper END -->
         </header>
 
         <!-- MAIN SECTION -->
         <main class="blogMain">
+            <div class="tabletWrapper">
+                <h2 class="tMobilePageHeading cWhite">Blog</h2>
+            </div>
             <!-- ARTICLE: OUR NEW COLLECTION -->
             <article class="ourNewCollection">
                 <div class="tabletWrapper">
@@ -141,16 +146,24 @@
                             <h4 class="tAsideHeading cWhite">Recent Posts</h4>
                             <ul class="listStyle">
                                 <li class="tList cWhite">
-                                    Donec facilisis tortor ut
+                                    <a href="#" class="removeLink"
+                                        >Donec facilisis tortor ut</a
+                                    >
                                 </li>
                                 <li class="tList cWhite">
-                                    Augue lacinia at viverra
+                                    <a href="#" class="removeLink"
+                                        >Augue lacinia at viverra</a
+                                    >
                                 </li>
                                 <li class="tList cWhite">
-                                    Semper sed sapien metus
+                                    <a href="#" class="removeLink"
+                                        >Semper sed sapien metus</a
+                                    >
                                 </li>
                                 <li class="tList cWhite">
-                                    Scelerique nec pharetra
+                                    <a href="#" class="removeLink"
+                                        >Scelerique nec pharetra</a
+                                    >
                                 </li>
                             </ul>
                         </div>
@@ -161,8 +174,9 @@
                 <!-- .tabletWrapper END -->
             </aside>
             <!-- SECTION: COMMENTS -->
-            <div class="wrapper">
-                <section class="comments">
+
+            <section class="comments">
+                <div class="wrapper">
                     <h4 class="tComments cBlack">Comments:</h4>
                     <article class="userComments">
                         <div class="imgContainer">
@@ -188,6 +202,7 @@
                                 scelerisque ligula. Mawcenas eu varius risus..
                             </p>
                         </div>
+                        <!-- .blogTextContainer END -->
                     </article>
                     <article class="userComments">
                         <div class="imgContainer">
@@ -212,6 +227,7 @@
                                 ligula.
                             </p>
                         </div>
+                        <!-- .blogTextContainer END -->
                     </article>
                     <!-- SECTION: FORM -->
                     <form action="#" class="commentForm fLight">
@@ -246,16 +262,13 @@
                             post comment
                         </button>
                     </form>
-                </section>
-            </div>
-            <!-- .wrapper END -->
+                </div>
+                <!-- .wrapper END -->
+            </section>
         </main>
         <!-- FOOTER -->
         <footer>
-            <div class="wrapper">
-                <h5 class="tCopyright">Copyright (C) 2019 Juno College</h5>
-            </div>
-            <!-- .WRAPPER END -->
+            <h6 class="tCopyright">Copyright (C) 2019 Juno College</h6>
         </footer>
     </body>
 </html>

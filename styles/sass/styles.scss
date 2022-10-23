@@ -22,7 +22,9 @@
 @use "./partials/contactMain";
 
 // MEDIA QUERY STYLES
-@use "./partials/indexMediaQuery";
 @use "./partials/navMediaQuery";
-@use "./partials/typographyMediaQuery";
+@use "./partials/indexMediaQuery";
 @use "./partials/blogMediaQuery";
+@use "./partials/contactMediaQuery";
+@use "./partials/formMediaQuery";
+@use "./partials/typographyMediaQuery";
