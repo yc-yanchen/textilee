@@ -4,7 +4,7 @@
     .commentForm {
         gap: 75px;
         .userInformation {
-            flex-flow: column;
+            flex-direction: column;
             input {
                 width: 100%;
             }

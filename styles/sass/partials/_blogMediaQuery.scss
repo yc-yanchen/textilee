@@ -5,7 +5,7 @@
     // SECTION: BLOG MAIN STYLING
     .blogMain {
         background-color: userV.$darkTurquoise;
-        padding: 100px 0 25px 0;
+        padding: 100px 0 0 0;
     }
     // SECTION: BLOG HEADER STYLNIG
     .blogHeader {
@@ -59,13 +59,14 @@
     .comments {
         width: 100vw;
         background-color: userV.$lightSkyBlue;
+        padding: 0 0 50px 0;
     }
 }
 
 // BLOG MEDIA QUERY 800px
 @media (max-width: 800px) {
     .blogMain {
-        padding: 10px 0;
+        padding: 10px 0 0 0;
     }
     // SECTION: BLOG HEADER STYLING
     .blogHeader {
@@ -82,7 +83,7 @@
         padding: 0 0 50px 0;
 
         .mobileContainerFlex {
-            flex-flow: column;
+            flex-direction: column;
         }
         .imgContainer {
             width: 100%;
@@ -96,5 +97,8 @@
     // SECTION: COMMENTS STYLNIG
     .comments {
         width: 100%;
+        .imgContainer {
+            width: 15%;
+        }
     }
 }

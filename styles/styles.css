@@ -753,8 +753,8 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
   gap: 2%;
 }
 .moreInformation .itemContainerFlex .itemContainer {
@@ -1021,8 +1021,8 @@ footer {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1078,8 +1078,8 @@ footer {
   .learnNewTechniques .itemContainerFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 100px 0 100px 0;
   }
   .learnNewTechniques .itemContainerFlex .indexTextContainer {
@@ -1182,7 +1182,7 @@ main .searchByStyle {
 @media (max-width: 1150px) {
   .blogMain {
     background-color: rgb(33, 64, 79);
-    padding: 100px 0 25px 0;
+    padding: 100px 0 0 0;
   }
   .blogHeader {
     height: auto;
@@ -1236,11 +1236,12 @@ main .searchByStyle {
   .comments {
     width: 100vw;
     background-color: rgb(204, 237, 251);
+    padding: 0 0 50px 0;
   }
 }
 @media (max-width: 800px) {
   .blogMain {
-    padding: 10px 0;
+    padding: 10px 0 0 0;
   }
   .blogHeader h2 {
     display: none;
@@ -1254,8 +1255,8 @@ main .searchByStyle {
   .ourMission .mobileContainerFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .ourMission .imgContainer {
     width: 100%;
@@ -1266,6 +1267,9 @@ main .searchByStyle {
   }
   .comments {
     width: 100%;
+  }
+  .comments .imgContainer {
+    width: 15%;
   }
 }
 @media (max-width: 1150px) {
@@ -1325,8 +1329,8 @@ main .searchByStyle {
   .commentForm .userInformation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .commentForm .userInformation input {
     width: 100%;
@@ -1358,7 +1362,7 @@ main .searchByStyle {
   }
   .tBody {
     font-size: 1.8rem;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.4px;
   }
   .tButton {
     font-size: 2.4rem;
@@ -1380,5 +1384,14 @@ main .searchByStyle {
   }
   .tPlaceholder {
     letter-spacing: 1.8px;
+  }
+  .tDate {
+    font-size: 1.8rem;
+  }
+  .tList {
+    font-size: 1.8rem;
+  }
+  .tAsideHeading {
+    font-size: 3rem;
   }
 }
