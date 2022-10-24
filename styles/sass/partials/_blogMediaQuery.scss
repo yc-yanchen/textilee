@@ -2,11 +2,6 @@
 
 // BLOG MEDIA QUERY 1150px
 @media (max-width: 1150px) {
-    // SECTION: BLOG MAIN STYLING
-    .blogMain {
-        background-color: userV.$darkTurquoise;
-        padding: 100px 0 0 0;
-    }
     // SECTION: BLOG HEADER STYLNIG
     .blogHeader {
         height: auto;
@@ -15,6 +10,12 @@
             width: 100%;
         }
     }
+    // SECTION: BLOG MAIN STYLING
+    .blogMain {
+        background-color: userV.$darkTurquoise;
+        padding: 100px 0 0 0;
+    }
+
     // SECTION OUR NEW COLLECTION STYLNIG
     .ourNewCollection {
         padding: 0 0 25px 0;

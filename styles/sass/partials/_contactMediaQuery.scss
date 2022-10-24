@@ -2,20 +2,18 @@
 
 // CONTACT MEDIA QUERY 1150px
 @media (max-width: 1150px) {
+    // SECTION: BLOG HEADER STYLNIG
+    .contactHeader {
+        height: auto;
+
+        .desktopPageHeading {
+            width: 100%;
+        }
+    }
     // SECTION: CONTACT MAIN STYLING
     .contactMain {
         background-color: userV.$darkTurquoise;
         padding: 1px 0;
-    }
-
-    // SECTION: CONTACT HEADER STYLING
-    .contactHeader {
-        padding: 30px 0 1px 0;
-        height: auto;
-
-        h2 {
-            width: 100%;
-        }
     }
 
     // SECTION: CONTACT CONTENT STYLING

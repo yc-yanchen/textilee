@@ -477,7 +477,6 @@ html {
   font-size: 62.5%;
   max-width: 1600px;
   margin: 0 auto;
-  background-color: black;
 }
 
 .wrapper {
@@ -847,6 +846,7 @@ footer {
   background: url(../textileeAssets/blogHeader.jpg) no-repeat;
   height: 568px;
   position: relative;
+  width: 100%;
 }
 
 .desktopPageHeading {
@@ -912,8 +912,8 @@ footer {
 
 .contactHeader {
   background: url(../textileeAssets/contactHeader.jpg) no-repeat;
-  padding: 30px 0 0 0;
   height: 576px;
+  position: relative;
 }
 .contactHeader h2 {
   margin: 125px 0;
@@ -1180,15 +1180,15 @@ main .searchByStyle {
   }
 }
 @media (max-width: 1150px) {
-  .blogMain {
-    background-color: rgb(33, 64, 79);
-    padding: 100px 0 0 0;
-  }
   .blogHeader {
     height: auto;
   }
   .blogHeader .desktopPageHeading {
     width: 100%;
+  }
+  .blogMain {
+    background-color: rgb(33, 64, 79);
+    padding: 100px 0 0 0;
   }
   .ourNewCollection {
     padding: 0 0 25px 0;
@@ -1273,16 +1273,15 @@ main .searchByStyle {
   }
 }
 @media (max-width: 1150px) {
+  .contactHeader {
+    height: auto;
+  }
+  .contactHeader .desktopPageHeading {
+    width: 100%;
+  }
   .contactMain {
     background-color: rgb(33, 64, 79);
     padding: 1px 0;
-  }
-  .contactHeader {
-    padding: 30px 0 1px 0;
-    height: auto;
-  }
-  .contactHeader h2 {
-    width: 100%;
   }
   .contactContent {
     -webkit-box-orient: vertical;
