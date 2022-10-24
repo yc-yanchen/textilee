@@ -14,24 +14,25 @@
         letter-spacing: 4.3px;
         font-weight: 400;
         display: block;
-        margin: 50px 0;
+        margin: 30px 0;
     }
 }
 
 // TYPOGRAPHY MEDIA QUERY 500px
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .tHeading {
         font-size: 3.8rem;
         line-height: 50px;
     }
     .tBody {
         font-size: 1.8rem;
+        letter-spacing: 1.8px;
     }
     .tButton {
         font-size: 2.4rem;
     }
     .tSmallerHeading {
-        font-size: 3.5rem;
+        font-size: 3.8rem;
         line-height: 45px;
     }
     .tCopyright {
@@ -41,5 +42,11 @@
         font-size: 1.8rem;
         line-height: 30px;
         text-align: center;
+    }
+    .tComments {
+        font-size: 3.5rem;
+    }
+    .tPlaceholder {
+        letter-spacing: 1.8px;
     }
 }

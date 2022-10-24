@@ -2,12 +2,9 @@
 
 @media (max-width: 800px) {
     .headerNavStyle {
-        height: 75px;
-        position: relative;
-
+        padding: 15px 0;
+        background-color: userV.$white;
         .hamburgerMenuStack {
-            right: -95%;
-            top: -35px;
             cursor: pointer;
             z-index: 100;
             position: relative;
@@ -22,26 +19,23 @@
                 background-color: userV.$textBlack;
             }
         }
+        .cover {
+            width: 100%;
+            height: 100%;
 
+            background-color: userV.$white;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10;
+        }
         nav {
-            display: block;
-
-            .cover {
-                width: 100%;
-                height: 75px;
-                background-color: userV.$white;
-                position: absolute;
-                left: 0;
-                top: 0;
-                z-index: 10;
-                // border-bottom: 1px solid userV.$textBlack;
-            }
             .navBar {
                 display: flex;
                 flex-flow: column;
                 align-items: flex-start;
                 position: absolute;
-                top: -250px;
+                top: -400px;
                 left: 0%;
                 width: 100%;
                 background-color: userV.$white;
@@ -53,6 +47,6 @@
         }
     }
     #hamburgerMenu:checked ~ .navBar {
-        top: 70px;
+        top: 60px;
     }
 }

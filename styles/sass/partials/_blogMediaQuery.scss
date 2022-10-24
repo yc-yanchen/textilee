@@ -5,11 +5,10 @@
     // SECTION: BLOG MAIN STYLING
     .blogMain {
         background-color: userV.$darkTurquoise;
-        padding: 1px 0;
+        padding: 100px 0 25px 0;
     }
     // SECTION: BLOG HEADER STYLNIG
     .blogHeader {
-        padding: 30px 0 1px 0;
         height: auto;
 
         .desktopPageHeading {
@@ -65,6 +64,9 @@
 
 // BLOG MEDIA QUERY 800px
 @media (max-width: 800px) {
+    .blogMain {
+        padding: 10px 0;
+    }
     // SECTION: BLOG HEADER STYLING
     .blogHeader {
         h2 {

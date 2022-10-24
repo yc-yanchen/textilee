@@ -511,6 +511,10 @@ li {
   padding-left: 5px;
 }
 
+.headerNavStyle {
+  padding: 30px 0;
+}
+
 h1 {
   display: inline-block;
 }
@@ -687,7 +691,6 @@ footer {
 
 .indexHeader {
   background: url(../textileeAssets/headerHome.jpg) no-repeat;
-  padding: 30px 0 0 0;
   height: 755px;
   position: relative;
 }
@@ -842,7 +845,6 @@ footer {
 
 .blogHeader {
   background: url(../textileeAssets/blogHeader.jpg) no-repeat;
-  padding: 30px 0 0 0;
   height: 568px;
   position: relative;
 }
@@ -980,12 +982,10 @@ footer {
 
 @media (max-width: 800px) {
   .headerNavStyle {
-    height: 75px;
-    position: relative;
+    padding: 15px 0;
+    background-color: rgb(255, 255, 255);
   }
   .headerNavStyle .hamburgerMenuStack {
-    right: -95%;
-    top: -35px;
     cursor: pointer;
     z-index: 100;
     position: relative;
@@ -1006,12 +1006,9 @@ footer {
     width: 30px;
     background-color: rgb(22, 21, 21);
   }
-  .headerNavStyle nav {
-    display: block;
-  }
-  .headerNavStyle nav .cover {
+  .headerNavStyle .cover {
     width: 100%;
-    height: 75px;
+    height: 100%;
     background-color: rgb(255, 255, 255);
     position: absolute;
     left: 0;
@@ -1030,7 +1027,7 @@ footer {
         -ms-flex-align: start;
             align-items: flex-start;
     position: absolute;
-    top: -250px;
+    top: -400px;
     left: 0%;
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -1041,7 +1038,7 @@ footer {
     transition: top 1s ease;
   }
   #hamburgerMenu:checked ~ .navBar {
-    top: 70px;
+    top: 60px;
   }
 }
 @media (max-width: 1350px) {
@@ -1070,7 +1067,6 @@ footer {
     padding: 100px 0 100px 0;
   }
   .indexHeader {
-    padding: 30px 0 1px 0;
     height: auto;
   }
   .indexHeader h2 {
@@ -1186,10 +1182,9 @@ main .searchByStyle {
 @media (max-width: 1150px) {
   .blogMain {
     background-color: rgb(33, 64, 79);
-    padding: 1px 0;
+    padding: 100px 0 25px 0;
   }
   .blogHeader {
-    padding: 30px 0 1px 0;
     height: auto;
   }
   .blogHeader .desktopPageHeading {
@@ -1244,6 +1239,9 @@ main .searchByStyle {
   }
 }
 @media (max-width: 800px) {
+  .blogMain {
+    padding: 10px 0;
+  }
   .blogHeader h2 {
     display: none;
   }
@@ -1350,22 +1348,23 @@ main .searchByStyle {
     letter-spacing: 4.3px;
     font-weight: 400;
     display: block;
-    margin: 50px 0;
+    margin: 30px 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .tHeading {
     font-size: 3.8rem;
     line-height: 50px;
   }
   .tBody {
     font-size: 1.8rem;
+    letter-spacing: 1.8px;
   }
   .tButton {
     font-size: 2.4rem;
   }
   .tSmallerHeading {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     line-height: 45px;
   }
   .tCopyright {
@@ -1375,5 +1374,11 @@ main .searchByStyle {
     font-size: 1.8rem;
     line-height: 30px;
     text-align: center;
+  }
+  .tComments {
+    font-size: 3.5rem;
+  }
+  .tPlaceholder {
+    letter-spacing: 1.8px;
   }
 }
