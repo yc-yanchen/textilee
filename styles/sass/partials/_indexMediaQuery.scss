@@ -3,15 +3,19 @@
 // INDEX MEDIA QUERY 1350px
 @media (max-width: 1350px) {
     // SECTION: DISCOVER STYLING
+
     .discover {
         position: static;
+
         .itemContainerFlex {
             align-items: center;
             gap: 5%;
         }
+
         .itemContainer {
             width: 47.5%;
         }
+
         .imgContainer {
             position: static;
             margin: 0 auto;
@@ -31,7 +35,6 @@
 
     // INDEX HEADER STYLING
     .indexHeader {
-        // padding: 30px 0 1px 0;
         height: auto;
 
         h2 {
@@ -48,6 +51,7 @@
         .itemContainerFlex {
             flex-direction: column;
             padding: 100px 0 100px 0;
+
             .indexTextContainer {
                 text-align: center;
                 max-width: 100%;
@@ -56,6 +60,7 @@
         .indexTextContainer {
             order: 2;
         }
+
         .imgContainer {
             order: 1;
             margin-bottom: 50px;
@@ -65,7 +70,7 @@
     // SECTION: MORE INFORMATION STYLING
     .moreInformation {
         .itemContainerFlex {
-            flex-flow: column;
+            flex-direction: column;
             .itemContainer {
                 width: 100%;
             }
@@ -75,7 +80,7 @@
     // SECTION: DISCOVER STYLING
     .discover {
         .itemContainerFlex {
-            flex-flow: column;
+            flex-direction: column;
 
             .itemContainer:nth-child(1) {
                 order: 1;
@@ -119,7 +124,7 @@
     // SECTION: GALLERY STYLING
     .gallery {
         .galleryFlex {
-            flex-flow: column;
+            flex-direction: column;
             gap: 75px;
             align-items: center;
         }
@@ -129,6 +134,7 @@
 // INDEX MEDIA QUERY 550px
 @media (max-width: 550px) {
     // MAIN SECTION STYLING
+
     main {
         // SECTION: LEARN NEW TECHNIQUES STYLING
         .learnNewTechniques {
@@ -136,6 +142,7 @@
                 padding: 0 0 0 0;
             }
         }
+
         // GENERAL STYLING
         .learnNewTechniques,
         .gallery,
@@ -145,10 +152,12 @@
             padding: 50px 0 50px 0;
         }
     }
+
     // ICON AND ICON CONTAINER STYLING
     .iconContainer {
         width: 40px;
         height: 40px;
+
         i {
             font-size: 2rem;
         }
