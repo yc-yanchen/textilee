@@ -1,10 +1,12 @@
 @use "./variables" as userV;
 
+// COMMENT FORM STYLING
 .commentForm {
     display: flex;
     flex-direction: column;
     gap: 25px;
 
+    // INPUT AND TEXTAREA STYLING
     input,
     textarea {
         background-color: inherit;
@@ -17,6 +19,7 @@
         outline: none;
     }
 
+    // INPUT BOX FOR NAME AND EMAIL ADDRESS
     .userInformation {
         width: 100%;
         display: flex;
@@ -29,17 +32,19 @@
         }
     }
 
+    // USER COMMENT INPUT AREA STYLING
     textarea {
         resize: none;
     }
 
+    // SUBMISSION BUTTON STYLING
     button {
         padding: 9px 0;
         border: none;
     }
 }
 
-// FORM THEMES (DARK/LIGHT)
+// FORM THEMES (LIGHT)
 .fLight {
     input,
     textarea {
@@ -56,6 +61,7 @@
     }
 }
 
+// FORM THEMES (DARK)
 .fDark {
     input,
     textarea {

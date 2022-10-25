@@ -1,5 +1,6 @@
 @use "./variables" as userV;
 
+// HEADER GENERAL STYLING FOR NAVIGATION BAR
 .headerNavStyle {
     padding: 30px 0;
 }
@@ -8,6 +9,7 @@ h1 {
     display: inline-block;
 }
 
+// NAVIGATION BAR STYLING
 nav {
     display: flex;
     justify-content: space-between;

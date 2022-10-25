@@ -846,7 +846,6 @@ footer {
   background: url(../textileeAssets/blogHeader.jpg) no-repeat;
   height: 568px;
   position: relative;
-  width: 100%;
 }
 
 .desktopPageHeading {
@@ -983,7 +982,7 @@ footer {
 @media (max-width: 800px) {
   .headerNavStyle {
     padding: 15px 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(245, 245, 245);
   }
   .headerNavStyle .hamburgerMenuStack {
     cursor: pointer;
@@ -1009,7 +1008,7 @@ footer {
   .headerNavStyle .cover {
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(245, 245, 245);
     position: absolute;
     left: 0;
     top: 0;
@@ -1030,7 +1029,7 @@ footer {
     top: -400px;
     left: 0%;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(245, 245, 245);
     z-index: 1;
     margin: 0;
     padding: 30px 12%;

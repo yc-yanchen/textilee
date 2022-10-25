@@ -1,9 +1,12 @@
 @use "./variables" as userV;
 
+// NAVIGATION MEDIA QUERY 800px
 @media (max-width: 800px) {
     .headerNavStyle {
         padding: 15px 0;
-        background-color: userV.$white;
+        background-color: userV.$navWhite;
+
+        // HAMBURGER MENU STYLING
         .hamburgerMenuStack {
             cursor: pointer;
             z-index: 100;
@@ -23,12 +26,14 @@
             width: 100%;
             height: 100%;
 
-            background-color: userV.$white;
+            background-color: userV.$navWhite;
             position: absolute;
             left: 0;
             top: 0;
             z-index: 10;
         }
+
+        // NAVIGATION LINK (VERTICAL)
         nav {
             .navBar {
                 display: flex;
@@ -38,7 +43,7 @@
                 top: -400px;
                 left: 0%;
                 width: 100%;
-                background-color: userV.$white;
+                background-color: userV.$navWhite;
                 z-index: 1;
                 margin: 0;
                 padding: 30px 12%;
@@ -46,6 +51,8 @@
             }
         }
     }
+
+    // REVEAL NAVIGATION MENU ON TOGGLE
     #hamburgerMenu:checked ~ .navBar {
         top: 60px;
     }

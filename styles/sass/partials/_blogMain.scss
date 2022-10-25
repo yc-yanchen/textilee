@@ -1,11 +1,13 @@
 @use "./variables" as userV;
 
+// BLOG MAIN STYLING
 .blogMain {
     background-color: userV.$lightSkyBlue;
     position: relative;
     padding-bottom: 100px;
 }
 
+// SECTION: OUR NEW COLLECTION STYLING
 .ourNewCollection {
     background-color: userV.$darkTurquoise;
     width: 62.5%;

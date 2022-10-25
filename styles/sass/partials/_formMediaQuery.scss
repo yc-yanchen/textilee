@@ -1,5 +1,6 @@
 @use "./variables" as userV;
 
+// FORM MEDIA QUERY
 @media (max-width: 800px) {
     .commentForm {
         gap: 75px;
