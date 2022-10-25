@@ -3,8 +3,11 @@
 // NAVIGATION MEDIA QUERY 800px
 @media (max-width: 800px) {
     .headerNavStyle {
+        z-index: 10;
+        position: sticky;
+        top: 0%;
         padding: 15px 0;
-        background-color: userV.$navWhite;
+        background-color: userV.$white;
 
         // HAMBURGER MENU STYLING
         .hamburgerMenuStack {
@@ -26,7 +29,7 @@
             width: 100%;
             height: 100%;
 
-            background-color: userV.$navWhite;
+            background-color: userV.$white;
             position: absolute;
             left: 0;
             top: 0;
@@ -43,7 +46,7 @@
                 top: -400px;
                 left: 0%;
                 width: 100%;
-                background-color: userV.$navWhite;
+                background-color: userV.$white;
                 z-index: 1;
                 margin: 0;
                 padding: 30px 12%;
