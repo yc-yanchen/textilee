@@ -909,6 +909,30 @@ footer {
   width: 80%;
 }
 
+.userImage {
+  background-color: rgb(12, 173, 192);
+  height: 92px;
+  width: 89px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.userImage p {
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+}
+
 .contactHeader {
   background: url(../textileeAssets/contactHeader.jpg) no-repeat;
   height: 576px;
