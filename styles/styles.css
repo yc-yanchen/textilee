@@ -743,9 +743,9 @@ footer {
 }
 
 .arrow {
-  border-top: 25px solid rgb(255, 255, 255);
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
+  border-top: 20px solid rgb(255, 255, 255);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
   opacity: 0.5;
   -webkit-transition: opacity 0.25s;
   transition: opacity 0.25s;
@@ -1204,7 +1204,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 75px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1213,11 +1215,10 @@ footer {
 .gallery .galleryFlex .imgContainer:nth-child(4) {
     display: none;
   }
+  .arrow {
+    display: block;
+  }
 }
-.arrow {
-  display: block;
-}
-
 @media (max-width: 550px) {
   main .learnNewTechniques .itemContainerFlex {
     padding: 0 0 0 0;

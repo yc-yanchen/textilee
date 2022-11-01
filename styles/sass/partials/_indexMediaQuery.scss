@@ -125,7 +125,7 @@
     .gallery {
         .galleryFlex {
             flex-direction: row;
-            gap: 75px;
+            justify-content: space-between;
             align-items: center;
             .imgContainer:nth-child(2),
             .imgContainer:nth-child(4) {
@@ -133,9 +133,9 @@
             }
         }
     }
-}
-.arrow {
-    display: block;
+    .arrow {
+        display: block;
+    }
 }
 
 // INDEX MEDIA QUERY 550px
