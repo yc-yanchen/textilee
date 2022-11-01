@@ -742,6 +742,30 @@ footer {
   gap: 3%;
 }
 
+.arrow {
+  border-top: 25px solid rgb(255, 255, 255);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  display: none;
+  cursor: pointer;
+}
+
+.arrow:hover,
+.arrow:focus {
+  opacity: 0.9;
+}
+
+.leftArrow {
+  rotate: 90deg;
+}
+
+.rightArrow {
+  rotate: -90deg;
+}
+
 .moreInformation {
   background-color: rgb(204, 237, 251);
   padding: 5% 0;
@@ -1176,16 +1200,24 @@ footer {
     display: none;
   }
   .gallery .galleryFlex {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 75px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+  .gallery .galleryFlex .imgContainer:nth-child(2),
+.gallery .galleryFlex .imgContainer:nth-child(4) {
+    display: none;
+  }
 }
+.arrow {
+  display: block;
+}
+
 @media (max-width: 550px) {
   main .learnNewTechniques .itemContainerFlex {
     padding: 0 0 0 0;

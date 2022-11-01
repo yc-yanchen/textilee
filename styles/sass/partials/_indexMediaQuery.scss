@@ -124,11 +124,18 @@
     // SECTION: GALLERY STYLING
     .gallery {
         .galleryFlex {
-            flex-direction: column;
+            flex-direction: row;
             gap: 75px;
             align-items: center;
+            .imgContainer:nth-child(2),
+            .imgContainer:nth-child(4) {
+                display: none;
+            }
         }
     }
+}
+.arrow {
+    display: block;
 }
 
 // INDEX MEDIA QUERY 550px

@@ -94,20 +94,3 @@ const commentSubmit = formEl.addEventListener('submit', function(event) {
     }
 
 })
-    // console.log(h6El)
-    // commentContainerEl.appendChild(h6El)
-
-    // Creating p to hold user comment
-//     const userParagraph = document.createElement('p');
-//     const userParagraphContent = userParagraph.textContent = userCommentPost;
-
-
-
-
-    
-// }
-    
-
-
-// console.log(userForm);
-

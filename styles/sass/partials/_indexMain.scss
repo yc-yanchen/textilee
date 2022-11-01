@@ -28,6 +28,27 @@
     }
 }
 
+.arrow {
+    border-top: 25px solid userV.$white;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    opacity: 0.5;
+    transition: opacity 0.25s;
+    display: none;
+    cursor: pointer;
+}
+.arrow:hover,
+.arrow:focus {
+    opacity: 0.9;
+}
+
+.leftArrow {
+    rotate: 90deg;
+}
+.rightArrow {
+    rotate: -90deg;
+}
+
 // SECTION: MORE INFORMATION STYLES
 .moreInformation {
     background-color: userV.$lightSkyBlue;
